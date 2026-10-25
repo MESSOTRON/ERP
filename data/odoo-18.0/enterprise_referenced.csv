@@ -1,0 +1,49 @@
+technical_name,name,summary,license,source,referenced_in
+account_3way_match,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/purchase/views/res_config_settings_views.xml
+account_bank_statement_import_camt,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_bank_statement_import_csv,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_bank_statement_import_ofx,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_bank_statement_import_qif,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_batch_payment,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_budget,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_extract,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_inter_company_rules,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/base_setup/views/res_config_settings_views.xml
+account_intrastat,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_iso20022,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_reports,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+account_sepa_direct_debit,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+accountant,Accounting,"Accounting, Taxes, Budgets, Assets...",OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+appointment,Appointments,Online appointments scheduler,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+currency_rate_live,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/account/views/res_config_settings_views.xml
+delivery_bpost,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/stock/views/res_config_settings_views.xml
+delivery_easypost,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/stock/views/res_config_settings_views.xml
+delivery_sendcloud,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/stock/views/res_config_settings_views.xml
+delivery_shiprocket,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/stock/views/res_config_settings_views.xml
+delivery_starshipit,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/stock/views/res_config_settings_views.xml
+helpdesk,Helpdesk,Track support tickets,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+hr_appraisal,Appraisal,Assess your employees,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+hr_expense_extract,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/hr_expense/views/res_config_settings_views.xml
+hr_payroll_expense,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/hr_expense/views/res_config_settings_views.xml
+hr_recruitment_extract,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/hr_recruitment/views/res_config_settings_views.xml
+industry_fsm,Field Service,"Schedule and track onsite operations, time and material",OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+knowledge,Knowledge,"Centralize, manage, share and grow your knowledge library",OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+l10n_in_enet_batch_payment,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/l10n_in/views/res_config_settings_views.xml
+maintenance_worksheet,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/maintenance/views/res_config_settings_views.xml
+marketing_automation,Marketing Automation,Build automated mailing campaigns,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+mrp_mps,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/mrp/views/res_config_settings_views.xml
+mrp_plm,Product Lifecycle Management (PLM),"PLM, ECOs, Versions",OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+mrp_workorder,MRP II,"Work Orders, Planning, Routing",OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+payment_sepa_direct_debit,Sepa Direct Debit Payment Provider,Checkout with SEPA Direct Debit,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+planning,Planning,Manage your employees' schedule,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+pos_preparation_display,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/point_of_sale/views/res_config_settings_views.xml
+quality_control,Quality,"Quality Alerts, Control Points",OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+quality_control_worksheet,,,OEEL-1,Enterprise-Schalter in Einstellungen (upgrade_boolean),addons/mrp/views/res_config_settings_views.xml
+sale_amazon,Amazon Connector,Import Amazon orders and sync deliveries,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+sale_subscription,Subscriptions,"MRR, Churn, Recurring payments",OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+sign,Sign,Send documents to sign online,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+social,Social Marketing,Manage your social media and website visitors,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+stock_barcode,Barcode,Barcode scanner for warehouses,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+timesheet_grid,Timesheets,Track time & costs,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+voip,VoIP,Call using VoIP,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+web_mobile,Android & iPhone,Support for Android & iOS Apps,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml
+web_studio,Studio,Create and Customize Applications,OEEL-1,App im Apps-Menü (to_buy),odoo/addons/base/data/ir_module_module.xml

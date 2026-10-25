@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.log
+
+# Lokale Kopien von Odoo- und OCA-Quellcode gehören nicht ins Repository
+/vendor/
+/src/

@@ -1,0 +1,660 @@
+technical_name,name,type,category,summary,application,auto_install,license,countries,depends,location
+base,Base,Technisch/Brücke,Hidden,,False,True,LGPL-3,,,odoo/addons
+test_assetsbundle,test-assetsbundle,Test,Hidden/Tests,,False,False,LGPL-3,,base,odoo/addons
+test_base,Test ORM,Test,Hidden/Tests,,False,False,LGPL-3,,base,odoo/addons
+test_data_module,test module to test data only modules,Test,Hidden/Tests,,False,False,LGPL-3,,,odoo/addons
+test_data_module_install,test installation of data module,Test,Hidden/Tests,,False,False,LGPL-3,,test_data_module,odoo/addons
+test_http,Test HTTP,Test,Hidden/Tests,,False,False,LGPL-3,,"web,web_tour,mail,rpc",odoo/addons
+test_inherit,test-inherit,Test,Hidden/Tests,,False,False,LGPL-3,,"base,test_base",odoo/addons
+test_inherit_depends,test-inherit-depends,Test,Hidden/Tests,,False,False,LGPL-3,,"test_inherit,test_base",odoo/addons
+test_inherits_depends,test-inherits-depends,Test,Hidden/Tests,,False,False,LGPL-3,,test_base,odoo/addons
+test_l10n,Test Localization,Test,Hidden/Tests,,False,False,LGPL-3,,base,odoo/addons
+test_lint,Test Lint,Test,Hidden/Tests,,False,False,LGPL-3,,base,odoo/addons
+test_main_flows,Test Main Flow,Test,Hidden/Tests,,False,False,LGPL-3,,"web_tour,crm,sale_timesheet,purchase_stock,mrp,account",odoo/addons
+test_tests,Test Tests,Test,Hidden/Tests,,False,False,LGPL-3,,"base,web",odoo/addons
+test_translation,Test Translation,Test,Hidden/Tests,,False,False,LGPL-3,,"base,web_tour",odoo/addons
+test_uninstall,test-uninstall,Test,Hidden/Tests,,False,False,LGPL-3,,base,odoo/addons
+test_web,test_search_panel,Test,Hidden/Tests,,False,False,LGPL-3,,"web,test_base",odoo/addons
+account,Invoicing,App,Accounting/Accounting,Invoices & Payments,True,False,LGPL-3,,"base_setup,onboarding,product,analytic,portal,digest",addons
+account_check_printing,Check Printing Base,Erweiterung,Accounting/Accounting,Check printing basic features,False,False,LGPL-3,,account,addons
+account_debit_note,Debit Notes,Erweiterung,Accounting/Accounting,Debit Notes,False,False,LGPL-3,,account,addons
+account_edi,Import/Export Invoices From XML/PDF,Erweiterung,Accounting/Accounting,,False,False,LGPL-3,,account,addons
+account_edi_proxy_client,Proxy features for account_edi,Erweiterung,Accounting/Accounting,,False,False,LGPL-3,,"account,certificate",addons
+account_edi_ubl_cii,Import/Export electronic invoices with UBL/CII,Technisch/Brücke,Accounting/Accounting,,False,True,LGPL-3,,account,addons
+account_fleet,Accounting/Fleet bridge,Technisch/Brücke,Accounting/Accounting,Manage accounting with fleets,False,True,LGPL-3,,"fleet,account",addons
+account_payment,Payment - Account,Technisch/Brücke,Accounting/Accounting,Enable customers to pay invoices on the portal and post payments when transactions are processed.,False,True,LGPL-3,,"account,payment",addons
+account_payment_custom,Payment Custom / Account Payment,Technisch/Brücke,Accounting/Payment Custom,Bridge between payment_custom and account_payment.,False,True,LGPL-3,,"account_payment,payment_custom",addons
+account_payment_interco,Intercompany Payment - Account,Erweiterung,Accounting/Accounting,Enable Intercompany payments to reconcile with their invoices on post.,False,False,LGPL-3,,account_payment,addons
+account_peppol,Peppol,Technisch/Brücke,Accounting/Accounting,This module is used to send/receive documents with Peppol,False,True,LGPL-3,"at,be,ch,cy,cz,de,dk,ee,es,fi,fr,ie,is,lt,lu,lv,mt,nl,no,se,si","account_edi_proxy_client,account_edi_ubl_cii",addons
+account_qr_code_emv,account_qr_code_emv,Erweiterung,Accounting/Payment,,False,False,LGPL-3,,account,addons
+account_qr_code_sepa,Account SEPA QR Code,Technisch/Brücke,Accounting/Payment,,False,True,LGPL-3,,account,addons
+account_tax_python,Define Taxes as Python Code,Erweiterung,Accounting/Accounting,Use python code to define taxes,False,False,LGPL-3,,account,addons
+account_test,Accounting Consistency Tests,Erweiterung,Accounting/Accounting,,False,False,LGPL-3,,account,addons
+account_update_tax_tags,Account - Allow updating tax grids,Erweiterung,Accounting/Accounting,Allow updating tax grids on existing entries,False,False,LGPL-3,,account,addons
+analytic,Analytic Accounting,Erweiterung,Accounting/Accounting,,False,False,LGPL-3,,"base,mail,uom",addons
+api_doc,API Documentation,Technisch/Brücke,Hidden,,False,True,LGPL-3,,web,addons
+attachment_indexation,Attachments List and Document Indexation,Technisch/Brücke,Hidden/Tools,,False,False,LGPL-3,,web,addons
+auth_ldap,Authentication via LDAP,Technisch/Brücke,Hidden/Tools,,False,False,LGPL-3,,"base,base_setup",addons
+auth_oauth,OAuth2 Authentication,Technisch/Brücke,Hidden/Tools,,False,False,LGPL-3,,"base,web,base_setup,auth_signup",addons
+auth_passkey,Passkeys,Technisch/Brücke,Hidden/Tools,Log in with a Passkey,False,True,LGPL-3,,"base_setup,web",addons
+auth_passkey_portal,Passkeys Portal,Technisch/Brücke,Hidden/Tools,Passkeys for portal users,False,True,LGPL-3,,"auth_passkey,portal",addons
+auth_password_policy,Password Policy,Technisch/Brücke,Hidden/Tools,Implement basic password policy configuration & check,False,False,LGPL-3,,"base_setup,web",addons
+auth_password_policy_portal,Password Policy support for Signup,Technisch/Brücke,Tools,,False,True,LGPL-3,,"auth_password_policy,portal",addons
+auth_password_policy_signup,Password Policy support for Signup,Technisch/Brücke,Hidden/Tools,,False,True,LGPL-3,,"auth_password_policy,auth_signup",addons
+auth_signup,Signup,Technisch/Brücke,Hidden/Tools,,False,True,LGPL-3,,"base_setup,mail,web",addons
+auth_timeout,Auth Timeout,Technisch/Brücke,Hidden/Tools,Ask for authentication after user inactivity,False,False,LGPL-3,,"auth_totp,auth_totp_mail,auth_passkey,bus",addons
+auth_totp,Two-Factor Authentication (TOTP),Technisch/Brücke,Extra Tools,,False,True,LGPL-3,,web,addons
+auth_totp_mail,2FA Invite mail,Technisch/Brücke,Extra Tools,,False,True,LGPL-3,,"auth_totp,mail",addons
+auth_totp_portal,TOTPortal,Technisch/Brücke,Hidden,,False,True,LGPL-3,,"portal,auth_totp",addons
+barcodes,Barcode,Erweiterung,Supply Chain/Inventory,Scan and Parse Barcodes,False,False,LGPL-3,,web,addons
+barcodes_gs1_nomenclature,Barcode - GS1 Nomenclature,Erweiterung,Supply Chain/Inventory,Parse barcodes according to the GS1-128 specifications,False,False,LGPL-3,,"barcodes,uom",addons
+base_address_extended,Extended Addresses,Erweiterung,Sales/Sales,Add extra fields on addresses,False,False,LGPL-3,,web,addons
+base_automation,Automation Rules,Erweiterung,Sales/Sales,,False,False,LGPL-3,,"base,digest,resource,mail,sms",addons
+base_geolocalize,Partners Geolocation,Erweiterung,Sales/Sales,,False,False,LGPL-3,,base_setup,addons
+base_import,Base import,Technisch/Brücke,Hidden/Tools,,False,True,LGPL-3,,web,addons
+base_import_module,Base import module,Technisch/Brücke,Hidden/Tools,,False,True,LGPL-3,,web,addons
+base_install_request,Base - Module Install Request,Technisch/Brücke,Hidden,,False,True,LGPL-3,,mail,addons
+base_report_paper_muncher,Report Engine: Paper Muncher,Technisch/Brücke,Hidden/Tools,Paper Muncher Engine,False,False,LGPL-3,,base_setup,addons
+base_report_wkhtmltox,Report Engine: wkhtmltopdf/wkhtmltoimage,Technisch/Brücke,Hidden/Tools,wkhtmltopdf rendering engine,False,True,LGPL-3,,,addons
+base_setup,Initial Setup Tools,Technisch/Brücke,Hidden,,False,True,LGPL-3,,"base,web",addons
+base_sparse_field,Sparse Fields,Technisch/Brücke,Hidden,Implementation of sparse fields.,False,False,LGPL-3,,base,addons
+board,Dashboards,Erweiterung,Productivity,Build your own dashboards,False,False,LGPL-3,,spreadsheet_dashboard,addons
+bus,IM Bus,Technisch/Brücke,Hidden,,False,True,LGPL-3,,"base,web",addons
+calendar,Calendar,App,Productivity/Calendar,Schedule employees' meetings,True,False,LGPL-3,,"base,mail",addons
+calendar_sms,Calendar - SMS,Technisch/Brücke,Productivity/Calendar,Send text messages as event reminders,False,True,LGPL-3,,"calendar,sms",addons
+certificate,Certificate,Technisch/Brücke,Hidden/Tools,Manage certificate,False,False,LGPL-3,,base_setup,addons
+cloud_storage,Cloud Storage,Technisch/Brücke,Technical Settings,Store chatter attachments in the cloud,False,False,LGPL-3,,"base_setup,mail",addons
+cloud_storage_azure,Cloud Storage Azure,Technisch/Brücke,Technical Settings,Store chatter attachments in the Azure cloud,False,False,LGPL-3,,cloud_storage,addons
+cloud_storage_google,Cloud Storage Google,Technisch/Brücke,Technical Settings,Store chatter attachments in the Google cloud,False,False,LGPL-3,,cloud_storage,addons
+cloud_storage_migration,Cloud Storage Migration,Technisch/Brücke,Technical Settings,Migrate local attachments to cloud storage,False,False,LGPL-3,,cloud_storage,addons
+contacts,Contacts,App,Sales/CRM,Centralize your address book,True,False,LGPL-3,,"base_address_extended,mail,web_hierarchy",addons
+crm,CRM,App,Sales/CRM,Track leads and close opportunities,True,False,LGPL-3,,"base_setup,base_install_request,sales_team,mail,calendar,resource,utm,web_tour,contacts,digest,phone_validation",addons
+crm_iap_enrich,Lead Enrichment,Technisch/Brücke,Sales/CRM,Enrich Leads/Opportunities using email address domain,False,True,LGPL-3,,"iap_crm,iap_mail",addons
+crm_iap_mine,Lead Generation,Technisch/Brücke,Sales/CRM,"Generate Leads/Opportunities based on country, industries, size, etc.",False,True,LGPL-3,,"iap_crm,iap_mail",addons
+crm_livechat,CRM Livechat,Technisch/Brücke,Sales/CRM,Create lead from livechat conversation,False,True,LGPL-3,,"crm,im_livechat",addons
+crm_mail_plugin,CRM Mail Plugin,Technisch/Brücke,Sales/CRM,Turn emails received in your mailbox into leads and log their content as internal notes.,False,True,LGPL-3,,"crm,mail_plugin",addons
+crm_sale_project,CRM - Project,Technisch/Brücke,Sales/CRM,Project Generation from Opportunities,False,True,LGPL-3,,"sale_project,crm",addons
+crm_sms,SMS in CRM,Technisch/Brücke,Sales/CRM,Add SMS capabilities to CRM,False,True,LGPL-3,,"crm,sms",addons
+data_recycle,Data Recycle,App,Productivity/Data Cleaning,Find old records and archive/delete them,True,False,LGPL-3,,mail,addons
+delivery,Delivery Costs,Erweiterung,Sales/Delivery,,False,False,LGPL-3,,"sale,payment_custom",addons
+digest,KPI Digests,Erweiterung,Marketing,,False,False,LGPL-3,,"mail,portal,resource",addons
+event,Events Organization,Erweiterung,Marketing/Events,"Trainings, Conferences, Meetings, Exhibitions, Registrations",False,False,LGPL-3,,"barcodes,base_setup,digest,mail,phone_validation,portal,utm",addons
+event_booth,Events Booths,Erweiterung,Marketing/Events,Manage event booths,False,False,LGPL-3,,event,addons
+event_booth_sale,Events Booths Sales,Technisch/Brücke,Marketing/Events,Manage event booths sale,False,True,LGPL-3,,"event_booth,event_sale",addons
+event_crm,Event CRM,Technisch/Brücke,Marketing/Events,,False,True,LGPL-3,,"event,crm",addons
+event_crm_sale,Event CRM Sale,Technisch/Brücke,Marketing/Events,,False,True,LGPL-3,,"event_crm,event_sale",addons
+event_product,Events Product,Technisch/Brücke,Marketing/Events,,False,True,LGPL-3,,"event,product,account",addons
+event_sale,Events Sales,Technisch/Brücke,Marketing/Events,,False,True,LGPL-3,,"event_product,sale_management",addons
+event_sms,SMS on Events,Technisch/Brücke,Marketing/Events,,False,True,LGPL-3,,"event,sms",addons
+fleet,Fleet,App,Human Resources/Fleet,Manage your fleet and track car costs,True,False,LGPL-3,,"base,mail",addons
+fleet_maintenance,Maintenance - Fleet,Technisch/Brücke,Human Resources,Integrates Fleet and Maintenance,False,True,LGPL-3,,"fleet,maintenance",addons
+gamification,Gamification,Erweiterung,Human Resources,,False,False,LGPL-3,,mail,addons
+gamification_sale_crm,CRM Gamification,Technisch/Brücke,Sales/CRM,,False,True,LGPL-3,,"gamification,sale_crm",addons
+google_account,Google Users,Technisch/Brücke,Hidden/Tools,,False,False,LGPL-3,,base_setup,addons
+google_address_autocomplete,Google Address Autocomplete,Technisch/Brücke,Hidden/Tools,Assist with automatic completion & suggestions when filling address,False,False,LGPL-3,,web,addons
+google_calendar,Google Calendar,Erweiterung,Productivity,,False,False,LGPL-3,,"google_account,calendar",addons
+google_gmail,Google Gmail,Technisch/Brücke,Hidden,,False,True,LGPL-3,,mail,addons
+google_recaptcha,Google reCAPTCHA integration,Technisch/Brücke,Hidden,,False,False,LGPL-3,,base_setup,addons
+hr,Employees,App,Human Resources/Employees,Centralize employee information,True,False,LGPL-3,,"auth_signup,base_setup,digest,phone_validation,resource_mail,web_hierarchy",addons
+hr_address_extended,HR Address Extended,Erweiterung,Human Resources/Employees,Centralize employee information,False,False,LGPL-3,,"hr,base_address_extended",addons
+hr_attendance,Attendances,App,Human Resources/Attendances,Track employee attendance,True,False,LGPL-3,,"hr,hr_work_entry,barcodes,base_geolocalize",addons
+hr_calendar,Display Working Hours in Calendar,Technisch/Brücke,Human Resources/Employees,,False,True,LGPL-3,,"hr,calendar",addons
+hr_calendar_google,HR Calendar with Google Calendar,Technisch/Brücke,Human Resources/Remote Work,,False,True,LGPL-3,,"hr_calendar,google_calendar",addons
+hr_expense,Expenses,App,Human Resources/Expenses,"Submit, validate and reinvoice employee expenses",True,False,LGPL-3,,"account,web_tour,hr",addons
+hr_fleet,Fleet History,Technisch/Brücke,Human Resources,Get history of driven cars by employees,False,True,LGPL-3,,"hr,fleet",addons
+hr_gamification,HR Gamification,Technisch/Brücke,Human Resources,,False,True,LGPL-3,,"gamification,hr",addons
+hr_holidays,Time Off,App,Human Resources/Time Off,Allocate time off and follow leave requests,True,False,LGPL-3,,"hr_work_entry,hr_calendar,resource",addons
+hr_holidays_attendance,HR Attendance Holidays,Technisch/Brücke,Human Resources,Attendance Holidays,False,True,LGPL-3,,"hr_attendance,hr_holidays",addons
+hr_livechat,HR - Livechat,Technisch/Brücke,Human Resources,,False,True,LGPL-3,,"hr,im_livechat",addons
+hr_maintenance,Maintenance - HR,Technisch/Brücke,Human Resources,"Equipment, Assets, Internal Hardware, Allocation Tracking",False,True,LGPL-3,,"hr,maintenance",addons
+hr_presence,Employee Presence Control,Erweiterung,Human Resources,,False,False,LGPL-3,,"hr,hr_holidays,sms",addons
+hr_recruitment,Recruitment,App,Human Resources/Recruitment,Track your recruitment pipeline,True,False,LGPL-3,,"hr,calendar,utm,attachment_indexation,web_tour,digest",addons
+hr_recruitment_skills,Recruitment - Skills Management,Technisch/Brücke,Human Resources/Recruitment,Manage skills of your employees,False,True,LGPL-3,,"hr_skills,hr_recruitment",addons
+hr_recruitment_sms,Recruitment - SMS,Technisch/Brücke,Human Resources/Recruitment,Mass mailing sms to job applicants,False,True,LGPL-3,,"hr_recruitment,sms",addons
+hr_recruitment_survey,Hr Recruitment Interview Forms,Erweiterung,Human Resources,Surveys,False,False,LGPL-3,,"survey,hr_recruitment",addons
+hr_skills,Skills Management,App,Human Resources/Employees,"Manage skills, knowledge and resume of your employees",True,True,LGPL-3,,hr,addons
+hr_skills_event,Skills Events,Technisch/Brücke,Hidden,Link training events to resume of your employees,False,True,LGPL-3,,"hr_skills,event",addons
+hr_skills_slides,Skills e-learning,Technisch/Brücke,Human Resources/Employees,Add completed courses to resume of your employees,False,True,LGPL-3,,"hr_skills,website_slides",addons
+hr_skills_survey,Skills Certification,Technisch/Brücke,Human Resources/Employees,Add certification to resume of your employees,False,True,LGPL-3,,"hr_skills,survey",addons
+hr_timesheet,Task Logs,Erweiterung,Services/Timesheets,Track employee time on tasks,False,False,LGPL-3,,"hr,analytic,project,uom",addons
+hr_timesheet_attendance,Timesheets/attendances reporting,Technisch/Brücke,Human Resources/Attendances,,False,True,LGPL-3,,"hr_timesheet,hr_attendance",addons
+hr_work_entry,Work Entries,Erweiterung,Human Resources/Employees,Manage work entries,False,False,LGPL-3,,hr,addons
+html_builder,HTML Builder,Erweiterung,Uncategorized,Generic html builder,False,False,LGPL-3,,html_editor,addons
+html_editor,HTML Editor,Technisch/Brücke,Hidden,A Html Editor component and plugin system.,False,True,LGPL-3,,"base,bus,web",addons
+http_routing,Web Routing,Technisch/Brücke,Hidden,Web Routing,False,False,LGPL-3,,web,addons
+iap,In-App Purchase,Technisch/Brücke,Hidden/Tools,Basic models and helpers to support In-App Purchase.,False,True,LGPL-3,,"web,base_setup",addons
+iap_crm,IAP / CRM,Technisch/Brücke,Hidden/Tools,Bridge between IAP and CRM,False,True,LGPL-3,,"crm,iap_mail",addons
+iap_mail,IAP / Mail,Technisch/Brücke,Hidden/Tools,Bridge between IAP and mail,False,True,LGPL-3,,"iap,mail",addons
+im_livechat,Live Chat,App,Website/Live Chat,Chat with your website visitors,True,False,LGPL-3,,"mail,digest,utm,phone_validation",addons
+iot_drivers,Hardware Proxy,Technisch/Brücke,Hidden,Connect the Web Client to Hardware Peripherals,False,False,LGPL-3,,,addons
+iot_webserial,Web Serial IoT devices,Erweiterung,Administration/IoT,Interface with serial devices directly via the browser using Web Serial.,False,False,LGPL-3,,web,addons
+l10n_account_edi_ubl_cii_tests,Testing the Import/Export invoices with UBL/CII,Lokalisierung,Accounting/Accounting,,False,False,LGPL-3,,"account_edi_ubl_cii,l10n_fr_account,l10n_be,l10n_de,l10n_nl,l10n_au",addons
+l10n_account_withholding_tax,Withholding Tax,Lokalisierung,Accounting/Localizations,,False,False,LGPL-3,,account,addons
+l10n_account_withholding_tax_pos,Withholding Tax on Payment - PoS,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_account_withholding_tax,point_of_sale",addons
+l10n_ae,United Arab Emirates - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ae,"account,l10n_gcc_invoice",addons
+l10n_ae_pos,United Arab Emirates - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_gcc_pos,l10n_ae",addons
+l10n_anz_ubl_pint,Australia & New Zealand - UBL PINT,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,"au,nz",account_edi_ubl_cii,addons
+l10n_ar,Argentina - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ar,"l10n_latam_invoice_document,account",addons
+l10n_ar_pos,Argentinean - Point of Sale with AR Doc,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_ar,point_of_sale",addons
+l10n_ar_stock,Argentinean - Stock,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_ar,stock_account",addons
+l10n_ar_website_sale,Argentinean eCommerce,Lokalisierung,Accounting/Localizations/Website,,False,True,LGPL-3,ar,"website_sale,l10n_ar",addons
+l10n_ar_withholding,Argentina - Payment Withholdings,Lokalisierung,Accounting/Localizations,,False,False,LGPL-3,ar,"l10n_ar,l10n_latam_check,l10n_account_withholding_tax",addons
+l10n_at,Austria - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,Austrian Standardized Charts & Tax,False,True,LGPL-3,at,"account,account_edi_ubl_cii,l10n_din5008",addons
+l10n_au,Australia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,au,account,addons
+l10n_bd,Bangladesh - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,bd,"account,l10n_account_withholding_tax",addons
+l10n_be,Belgium - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,be,"account,account_edi_ubl_cii",addons
+l10n_be_pos,BE POS Localization,Lokalisierung,Sales/Point of Sale,Link module between point_of_sale and l10n_be,False,True,LGPL-3,,"point_of_sale,l10n_be,account",addons
+l10n_be_pos_restaurant,Belgian POS Restaurant Localization,Lokalisierung,Sales/Point of Sale,,False,True,LGPL-3,,"pos_restaurant,l10n_be",addons
+l10n_be_pos_sale,l10n_be_pos_sale,Lokalisierung,Sales/Point of Sale,Link module between pos_sale and l10n_be,False,True,LGPL-3,,"pos_sale,l10n_be",addons
+l10n_bf,Burkina Faso - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,bf,"l10n_syscohada,account",addons
+l10n_bg,Bulgaria - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,bg,account,addons
+l10n_bg_ledger,Bulgaria - Report ledger,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,bg,l10n_bg,addons
+l10n_bh,Bahrain - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,bh,"account,l10n_gcc_invoice",addons
+l10n_bj,Benin - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,bj,"l10n_syscohada,account",addons
+l10n_bo,Bolivia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,bo,account,addons
+l10n_br,Brazilian - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,br,"account,account_qr_code_emv,l10n_latam_invoice_document",addons
+l10n_br_sales,Brazil - Sale,Lokalisierung,Sales/Sales,,False,True,LGPL-3,,"l10n_br,sale",addons
+l10n_br_website_sale,Brazil - Website Sale,Lokalisierung,Sales/Sales,,False,True,LGPL-3,,"l10n_br,website_sale",addons
+l10n_ca,Canada - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ca,account,addons
+l10n_cd,Democratic Republic of the Congo - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cd,"l10n_syscohada,account",addons
+l10n_cf,Central African Republic - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cf,"l10n_syscohada,account",addons
+l10n_cg,Congo - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cg,"l10n_syscohada,account",addons
+l10n_ch,Switzerland - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ch,"account,account_edi_ubl_cii,l10n_din5008",addons
+l10n_ch_pos,Swiss - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_ch,point_of_sale",addons
+l10n_ci,Ivory Coast - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ci,"l10n_syscohada,account",addons
+l10n_cl,Chile - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cl,"contacts,l10n_latam_invoice_document,uom,account",addons
+l10n_cm,Cameroon - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cm,"l10n_syscohada,account",addons
+l10n_cn,China - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cn,"base,account",addons
+l10n_co,Colombia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,co,"account_debit_note,account",addons
+l10n_co_pos,Colombian - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_co,point_of_sale",addons
+l10n_cr,Costa Rica - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cr,account,addons
+l10n_cy,Cyprus - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cy,"account,account_edi_ubl_cii",addons
+l10n_cz,Czech - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,cz,"account,account_edi_ubl_cii",addons
+l10n_de,Germany - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,de,"l10n_din5008,account,account_edi_ubl_cii",addons
+l10n_din5008,DIN 5008,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,"de,ch",account,addons
+l10n_din5008_expense,DIN 5008 - Expenses,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_din5008,hr_expense",addons
+l10n_din5008_purchase,DIN 5008 - Purchase,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_din5008,purchase",addons
+l10n_din5008_repair,DIN 5008 - Repair,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_din5008,repair",addons
+l10n_din5008_sale,DIN 5008 - Sale,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_din5008,sale",addons
+l10n_din5008_stock,DIN 5008 - Stock,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_din5008,stock",addons
+l10n_dk,Denmark - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,dk,"account,account_edi_proxy_client,account_edi_ubl_cii",addons
+l10n_dk_fik,Denmark - FIK Number,Lokalisierung,Accounting/Localizations,Use FIK Number as Payment reference,False,True,LGPL-3,,l10n_dk,addons
+l10n_do,Dominican Republic - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,do,"account,l10n_latam_invoice_document",addons
+l10n_dz,Algeria - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,dz,account,addons
+l10n_ec,Ecuadorian Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ec,"base,account_debit_note,l10n_latam_invoice_document,account",addons
+l10n_ec_sale,Ecuador - Sale,Lokalisierung,Accounting/Localizations/Sale,,False,True,LGPL-3,,"l10n_ec,sale",addons
+l10n_ee,Estonia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ee,"account,account_edi_ubl_cii",addons
+l10n_eg,Egypt - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,eg,"account,l10n_account_withholding_tax",addons
+l10n_eg_edi_eta,Egypt E-Invoicing,Lokalisierung,account,Egypt Tax Authority Invoice Integration,False,False,LGPL-3,eg,l10n_eg,addons
+l10n_eg_edi_pos,Egypt E-Receipts (POS),Lokalisierung,Accounting/Localizations/EDI,Submit POS receipts to the Egyptian Tax Authority,False,True,LGPL-3,eg,"point_of_sale,l10n_eg_edi_eta",addons
+l10n_es,Spain - Accounting (PGCE 2008),Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,es,"account,account_edi_ubl_cii",addons
+l10n_es_edi_facturae,Spain - Facturae EDI,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,,"certificate,l10n_es",addons
+l10n_es_edi_sii,Spain - SII EDI Suministro de Libros,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,es,"certificate,l10n_es",addons
+l10n_es_edi_tbai,Spain - TicketBAI,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,,"l10n_es,certificate",addons
+l10n_es_edi_tbai_pos,Spain - Point of Sale + TicketBAI,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_es_edi_tbai,point_of_sale",addons
+l10n_es_edi_verifactu,Spain - Veri*Factu,Lokalisierung,Accounting/Localizations/EDI,Module for sending Spanish Veri*Factu XML to the AEAT,False,False,LGPL-3,,"l10n_es,certificate",addons
+l10n_es_edi_verifactu_pos,Spain - Veri*Factu for Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,Add Veri*Factu support to Point of Sale,False,True,LGPL-3,,"l10n_es_edi_verifactu,point_of_sale",addons
+l10n_es_pos,[Deprecated] Spain - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,Spanish localization for Point of Sale,False,False,LGPL-3,,"point_of_sale,l10n_es",addons
+l10n_es_website_sale,Spain - ECommerce,Lokalisierung,Accounting/Localizations/Website,,False,False,LGPL-3,,"l10n_es,website_sale",addons
+l10n_et,Ethiopia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,et,account,addons
+l10n_eu_account_vies,VAT VIES Validation,Lokalisierung,Accounting/Accounting,,False,False,LGPL-3,,account,addons
+l10n_eu_oss,EU One Stop Shop (OSS),Lokalisierung,Accounting/Localizations,,False,False,LGPL-3,,account,addons
+l10n_fi,Finland - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,fi,"account,account_edi_ubl_cii",addons
+l10n_fi_sale,Finland - Sale,Lokalisierung,Sales/Sales,,False,True,LGPL-3,,"l10n_fi,sale",addons
+l10n_fr,France - Localizations,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,fr,base,addons
+l10n_fr_account,France - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,fr,"account,account_edi_ubl_cii,l10n_fr",addons
+l10n_fr_facturx_chorus_pro,France - BIS3 integration for Chorus Pro,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,fr,"account,account_edi_ubl_cii,l10n_fr_account",addons
+l10n_fr_hr_holidays,France - Time Off,Lokalisierung,Human Resources/Time Off,Management of leaves for part-time workers in France,False,True,LGPL-3,fr,hr_holidays,addons
+l10n_fr_payment,France - Worldline Payment Branding,Lokalisierung,Uncategorized,Applies CAWL/Worldline branding rules for French companies.,False,True,LGPL-3,fr,"l10n_fr,payment",addons
+l10n_fr_pdp,France - E-Invoicing (Approved Platform),Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,,"l10n_fr_account,account_peppol,iap",addons
+l10n_fr_pdp_pos,France - E-reporting for POS,Lokalisierung,Accounting/Localizations/Reporting,Flux 10 e-reporting for POS,False,True,LGPL-3,,"l10n_fr_pdp,point_of_sale",addons
+l10n_fr_pos_cert,France - VAT Anti-Fraud Certification for Point of Sale (CGI 286 I-3 bis),Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_fr_account,point_of_sale",addons
+l10n_ga,Gabon - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ga,"l10n_syscohada,account",addons
+l10n_gcc_invoice,Gulf Cooperation Council - Invoice,Lokalisierung,Accounting/Localizations,,False,False,LGPL-3,,account,addons
+l10n_gcc_invoice_stock_account,Gulf Cooperation Council WMS Accounting,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_gcc_invoice,stock_account",addons
+l10n_gcc_pos,Gulf Cooperation Council - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"point_of_sale,l10n_gcc_invoice",addons
+l10n_ge,Georgia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,Georgian accounting localization package,False,False,LGPL-3,GE,account,addons
+l10n_gf,Guyana - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gf,"l10n_fr_account,account",addons
+l10n_gn,Guinea - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gn,"l10n_syscohada,account",addons
+l10n_gp,Guadeloupe - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gp,"l10n_fr_account,account",addons
+l10n_gq,Guinea Equatorial - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gq,"l10n_syscohada,account",addons
+l10n_gr,Greece - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gr,"account,account_edi_ubl_cii",addons
+l10n_gr_edi,Greece - myDATA,Lokalisierung,Accounting/Localizations,Connect to myDATA API implementation for Greece,False,True,LGPL-3,gr,"account_edi_ubl_cii,l10n_gr",addons
+l10n_gr_edi_delivery_note,Greece - myDATA Delivery Note,Lokalisierung,Accounting/Localizations,Transmit Greece myDATA EDI for Delivery Notes,False,True,LGPL-3,gr,"l10n_gr_edi,stock,sale,sale_stock",addons
+l10n_gr_edi_e_invoo,Greece - myDATA E-invoicing through e-invoo,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,gr,"account_edi_proxy_client,l10n_gr_edi",addons
+l10n_gr_edi_e_invoo_bridge,Greece - myDATA E-invoicing through e-invoo (direct API),Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,gr,"l10n_gr_edi,l10n_gr_edi_e_invoo",addons
+l10n_gt,Guatemala - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gt,account,addons
+l10n_gw,Guinea-Bissau - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gw,"l10n_syscohada,account",addons
+l10n_hk,Hong Kong - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,hk,"account_qr_code_emv,account",addons
+l10n_hn,Honduras - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,hn,"base,account",addons
+l10n_hr,Croatia - Accounting (Euro),Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,hr,account,addons
+l10n_hr_edi,Croatia - e-invoicing,Lokalisierung,Accounting/Localizations/Reporting,,False,False,LGPL-3,,"l10n_hr,account_edi_ubl_cii",addons
+l10n_hr_kuna,Croatia - Accounting (Kuna),Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,hr,account,addons
+l10n_hu,Hungary - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,hu,account,addons
+l10n_hu_edi,Hungary - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,,"account_debit_note,l10n_hu",addons
+l10n_id,Indonesian - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,id,account,addons
+l10n_id_efaktur_coretax,Indonesia E-faktur (Coretax),Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,,l10n_id,addons
+l10n_id_pos,Indonesia - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_id,point_of_sale",addons
+l10n_id_pos_self_order_qris,Indonesia - POS Self Order QRIS,Lokalisierung,Sales/Point of Sale,Accept QRIS QR code payments in a kiosk.,False,True,LGPL-3,,"pos_self_order,l10n_id_pos",addons
+l10n_ie,Ireland - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ie,"account,account_edi_ubl_cii",addons
+l10n_il,Israel - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,il,account,addons
+l10n_in,Indian - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,in,"account_tax_python,account_debit_note,account,l10n_account_withholding_tax,iap",addons
+l10n_in_boe,Indian - Bill Of Entry,Lokalisierung,Accounting/Localizations,,False,False,LGPL-3,in,"l10n_in,stock_landed_costs",addons
+l10n_in_edi,Indian - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,in,l10n_in,addons
+l10n_in_ewaybill,Indian - E-waybill,Lokalisierung,Accounting/Localizations,,False,False,LGPL-3,in,l10n_in,addons
+l10n_in_ewaybill_irn,Indian - E-waybill thru IRN,Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_in_ewaybill,l10n_in_edi",addons
+l10n_in_ewaybill_stock,Indian - E-waybill Stock,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,,"l10n_in_stock,l10n_in_ewaybill",addons
+l10n_in_hr_holidays,India - Time Off,Lokalisierung,Human Resources/Time Off,Leave Management of Indian Localization,False,True,LGPL-3,in,hr_holidays,addons
+l10n_in_pos,Indian - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_in,point_of_sale",addons
+l10n_in_purchase_stock,India Purchase and Warehouse Management,Lokalisierung,Accounting/Localizations/Purchase,Get warehouse address if the bill is created from Purchase Order,False,True,LGPL-3,,"l10n_in_stock,purchase_stock",addons
+l10n_in_sale,Indian - Sale Report(GST),Lokalisierung,Accounting/Localizations/Sale,,False,True,LGPL-3,,"l10n_in,sale",addons
+l10n_in_sale_stock,India Sales and Warehouse Management,Lokalisierung,Accounting/Localizations/Sale,Get warehouse address if the invoice is created from Sale Order,False,True,LGPL-3,,"l10n_in_sale,l10n_in_stock,sale_stock",addons
+l10n_in_stock,Indian - Stock Report(GST),Lokalisierung,Accounting/Localizations,,False,True,LGPL-3,,"l10n_in,stock,stock_account",addons
+l10n_iq,Iraq - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,iq,account,addons
+l10n_it,Italy - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,it,"account,account_edi_ubl_cii",addons
+l10n_it_edi,Italy - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,,"l10n_it,account_edi_proxy_client,account_debit_note",addons
+l10n_it_edi_doi,Italy - Declaration of Intent,Lokalisierung,Accounting/Localizations,,False,False,LGPL-3,it,"l10n_it_edi,sale",addons
+l10n_it_edi_sale,Italy - Sale E-invoicing,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,,"l10n_it_edi,sale",addons
+l10n_it_stock_ddt,Italy - Stock DDT,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,,"l10n_it_edi,stock_delivery,stock_account",addons
+l10n_jo,Jordan - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,jo,account,addons
+l10n_jo_edi,Jordan E-Invoicing,Lokalisierung,Accounting/Localizations/EDI,Electronic Invoicing for Jordan UBL 2.1,False,True,LGPL-3,jo,"account_edi_ubl_cii,l10n_jo",addons
+l10n_jo_edi_pos,Jordan Accounting EDI for POS,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,jo,"l10n_jo_edi,pos_edi_ubl",addons
+l10n_jp,Japan - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,jp,account,addons
+l10n_jp_ubl_pint,Japan - UBL PINT,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,jp,account_edi_ubl_cii,addons
+l10n_ke,Kenya - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ke,account,addons
+l10n_ke_edi_tremol,Kenya Tremol Device EDI Integration,Lokalisierung,Accounting/Localizations/EDI,Kenya Tremol Device EDI Integration,False,False,LGPL-3,ke,l10n_ke,addons
+l10n_kh,Cambodia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,kh,"account_qr_code_emv,l10n_account_withholding_tax",addons
+l10n_km,Comoros - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,km,"l10n_syscohada,account",addons
+l10n_kr,Republic of Korea - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,kr,account,addons
+l10n_kr_sale,Republic of Korea - Sales,Lokalisierung,Accounting/Localizations/Sale,,False,True,LGPL-3,kr,"sale,l10n_kr",addons
+l10n_kw,Kuwait - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,kw,"account,l10n_gcc_invoice",addons
+l10n_kz,Kazakhstan - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,kz,account,addons
+l10n_latam_check,Third Party and Deferred/Electronic Checks Management,Lokalisierung,Accounting/Localizations,Checks Management,False,False,LGPL-3,,account,addons
+l10n_latam_invoice_document,LATAM Document,Lokalisierung,Accounting/Localizations,LATAM Document Types,False,False,LGPL-3,,"account,account_debit_note",addons
+l10n_lb_account,Lebanon - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,lb,account,addons
+l10n_lk,Sri Lanka - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,Provides accounting localizations for Sri Lanka.,False,True,LGPL-3,lk,"account,l10n_account_withholding_tax",addons
+l10n_lt,Lithuania - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,lt,"account,account_edi_ubl_cii",addons
+l10n_lu,Luxembourg - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,lu,"account,account_edi_ubl_cii",addons
+l10n_lv,Latvia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,lv,"account,account_edi_ubl_cii",addons
+l10n_ma,Morocco - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ma,"base,account",addons
+l10n_mc,Monaco - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,mc,"l10n_fr_account,account",addons
+l10n_mk,North Macedonia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,mk,account,addons
+l10n_ml,Mali - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ml,"l10n_syscohada,account",addons
+l10n_mm,Myanmar - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,mm,"account_qr_code_emv,l10n_account_withholding_tax",addons
+l10n_mn,Mongolia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,mn,account,addons
+l10n_mq,Martinique - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,mq,"l10n_fr_account,account",addons
+l10n_mr,Mauritania - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,mr,account,addons
+l10n_mt,Malta - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,mt,"account,account_edi_ubl_cii",addons
+l10n_mt_pos,Malta - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,mt,point_of_sale,addons
+l10n_mu_account,Mauritius - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,mu,account,addons
+l10n_mx,Mexico - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,mx,account,addons
+l10n_my,Malaysia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,my,"account,account_tax_python",addons
+l10n_my_edi,Malaysia - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,E-invoicing using MyInvois,False,True,LGPL-3,my,"l10n_my,l10n_my_ubl_pint,account_edi_proxy_client",addons
+l10n_my_edi_pos,Malaysia - E-invoicing (POS),Lokalisierung,Accounting/Localizations/EDI,Consolidated E-invoicing using MyInvois,False,True,LGPL-3,my,"l10n_my_edi,point_of_sale",addons
+l10n_my_ubl_pint,Malaysia - UBL PINT,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,my,account_edi_ubl_cii,addons
+l10n_mz,Mozambique - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,mz,"base,account",addons
+l10n_ne,Niger - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ne,"l10n_syscohada,account",addons
+l10n_ng,Nigeria - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ng,account,addons
+l10n_nl,Netherlands - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,nl,"account,account_edi_ubl_cii",addons
+l10n_no,Norway - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,no,"account,account_edi_ubl_cii",addons
+l10n_nz,New Zealand - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,nz,account,addons
+l10n_om,Oman - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,om,"account,l10n_gcc_invoice",addons
+l10n_pa,Panama - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,pa,"account,base_address_extended,contacts,l10n_latam_invoice_document",addons
+l10n_pe,Peru - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,pe,"l10n_latam_invoice_document,account_debit_note,account",addons
+l10n_pe_pos,Peruvian - Point of Sale with Pe Doc,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_pe,point_of_sale",addons
+l10n_ph,Philippines - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,This is the module to manage the accounting chart for The Philippines.,False,True,LGPL-3,ph,"account,l10n_account_withholding_tax",addons
+l10n_ph_invoice,Philippines - Discount Privileges on Invoice,Lokalisierung,Accounting/Localizations,Apply Philippine SC/PWD discount privileges on customer invoices and credit notes.,False,False,LGPL-3,ph,l10n_ph,addons
+l10n_ph_sale,Philippines - Discount Privileges on Sale Orders,Lokalisierung,Accounting/Localizations,Apply Philippine SC/PWD discount privileges on quotations and sale orders.,False,False,LGPL-3,ph,"l10n_ph_invoice,sale",addons
+l10n_pk,Pakistan - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,pk,"account,account_tax_python,l10n_account_withholding_tax,product",addons
+l10n_pk_edi,Pakistan - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,Electronic Invoicing for Pakistan FBR(v1.12),False,False,LGPL-3,pk,"account_debit_note,iap,l10n_pk,stock_delivery",addons
+l10n_pk_edi_pos,Pakistan - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,False,LGPL-3,pk,"l10n_pk,pos_discount,iap,stock_delivery",addons
+l10n_pl,Poland - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,pl,"account,account_edi_ubl_cii",addons
+l10n_pl_edi,Polish E-Invoicing FA(3),Lokalisierung,Accounting/Localizations,Support for FA(3) electronic invoices in Poland via KSeF,False,True,LGPL-3,,"l10n_pl,certificate",addons
+l10n_pl_edi_jst,Polish E-Invoicing FA(3) LGU support,Lokalisierung,Accounting/Localizations,Support for Local Government Unit (LGU) in the FA(3) format,False,True,LGPL-3,,"l10n_pl,l10n_pl_edi",addons
+l10n_pt,Portugal - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,pt,"base,account,account_edi_ubl_cii",addons
+l10n_qa,Qatar - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,qa,"account,l10n_gcc_invoice",addons
+l10n_re,Reunion - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,re,"l10n_fr_account,account",addons
+l10n_ro,Romania - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ro,"account,account_edi_ubl_cii",addons
+l10n_ro_edi,Romania - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,E-Invoice implementation for Romania,False,True,LGPL-3,,"account_edi_ubl_cii,l10n_ro",addons
+l10n_ro_edi_stock,Romania - E-Transport,Lokalisierung,Accounting/Localizations/EDI,,False,False,LGPL-3,,"stock_delivery,l10n_ro_edi",addons
+l10n_rs,Serbia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,rs,account,addons
+l10n_rs_edi,Serbia - eFaktura E-invoicing,Lokalisierung,Accounting/Localizations/EDI,E-Invoice implementation for Serbia,False,True,LGPL-3,rs,"account_edi_ubl_cii,l10n_rs",addons
+l10n_rw,Rwanda - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,rw,account,addons
+l10n_sa,Saudi Arabia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,sa,"l10n_gcc_invoice,account,account_debit_note,l10n_account_withholding_tax",addons
+l10n_sa_edi,Saudi Arabia - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,"E-Invoicing, Universal Business Language",False,False,LGPL-3,sa,"account_edi_ubl_cii,l10n_sa,certificate",addons
+l10n_sa_edi_pos,Saudi Arabia - E-invoicing (Simplified),Lokalisierung,Accounting/Localizations/EDI,"ZATCA E-Invoicing, support for PoS",False,False,LGPL-3,sa,"l10n_sa_pos,l10n_sa_edi",addons
+l10n_sa_pos,Saudi Arabia - Point of Sale,Lokalisierung,Accounting/Localizations/Point of Sale,,False,True,LGPL-3,,"l10n_gcc_pos,l10n_sa",addons
+l10n_se,Sweden - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,se,"account,account_edi_ubl_cii",addons
+l10n_sg,Singapore - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,sg,"account_qr_code_emv,account,account_edi_ubl_cii,account_peppol",addons
+l10n_sg_ubl_pint,Singapore - UBL PINT,Lokalisierung,Accounting/Localizations/EDI,,False,True,LGPL-3,sg,l10n_sg,addons
+l10n_si,Slovenian - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,si,"account,account_edi_ubl_cii",addons
+l10n_sk,Slovak - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,sk,account,addons
+l10n_sn,Sénégal - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,sn,"l10n_syscohada,account",addons
+l10n_syscohada,OHADA - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,,account,addons
+l10n_td,Tchad - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,td,"l10n_syscohada,account",addons
+l10n_test_pos_qr_payment,POS QR Tests,Lokalisierung,Sales/Point of Sale,,False,False,LGPL-3,,"point_of_sale,account_qr_code_sepa,l10n_be,l10n_ch,l10n_hk,l10n_br",addons
+l10n_tg,Togo - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,tg,"l10n_syscohada,account",addons
+l10n_th,Thailand - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,th,"account_qr_code_emv,account,l10n_account_withholding_tax",addons
+l10n_tn,Tunisia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,tn,account,addons
+l10n_tr,Türkiye - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,tr,"account,contacts",addons
+l10n_tw,Taiwan - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,tw,account,addons
+l10n_tw_edi_ecpay,Taiwan - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,E-invoicing using ECpay,False,False,LGPL-3,tw,l10n_tw,addons
+l10n_tw_edi_ecpay_pos,Taiwan - E-invoicing Pos,Lokalisierung,Point of sale/Localizations/EDI,ECpay E-invoice bridge module for POS,False,True,LGPL-3,,"point_of_sale,l10n_tw_edi_ecpay",addons
+l10n_tw_edi_ecpay_sale,Taiwan - E-invoicing Sales,Lokalisierung,Website Sale/Localizations/EDI,ECPay E-invoice bridge module for Sales,False,True,LGPL-3,,"sale,l10n_tw_edi_ecpay",addons
+l10n_tw_edi_ecpay_website_sale,Taiwan - E-invoicing Ecommerce,Lokalisierung,Website Sale/Localizations/EDI,ECpay E-invoice bridge module for Ecommerce,False,True,LGPL-3,,"website_sale,l10n_tw_edi_ecpay_sale",addons
+l10n_tz_account,Tanzania - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,tz,account,addons
+l10n_ua,Ukraine - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ua,account,addons
+l10n_ug,Uganda - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ug,account,addons
+l10n_uk,United Kingdom - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,gb,account,addons
+l10n_us,United States - Localizations,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,us,"base,base_address_extended",addons
+l10n_us_account,United States - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,us,"l10n_us,account,base_address_extended",addons
+l10n_uy,Uruguay - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,uy,"account,l10n_latam_invoice_document",addons
+l10n_uz,Uzbekistan - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,False,LGPL-3,uz,account,addons
+l10n_ve,Venezuela - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,ve,account,addons
+l10n_vn,Vietnam - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,vn,"account_qr_code_emv,account",addons
+l10n_vn_edi_viettel,Vietnam - E-invoicing,Lokalisierung,Accounting/Localizations/EDI,E-invoicing using SInvoice by Viettel,False,False,LGPL-3,vn,l10n_vn,addons
+l10n_vn_edi_viettel_pos,Vietnam - POS E-invoicing,Lokalisierung,Accounting/Localizations/EDI,POS E-invoicing using SInvoice by Viettel,False,True,LGPL-3,vn,"l10n_vn_edi_viettel,point_of_sale",addons
+l10n_vn_edi_viettel_stock,Vietnam - Delivery E-invoicing,Lokalisierung,Accounting/Localizations/EDI,Delivery E-invoicing using SInvoice by Viettel,False,True,LGPL-3,vn,"l10n_vn_edi_viettel,stock",addons
+l10n_yt,Mayotte - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,yt,"l10n_fr_account,account",addons
+l10n_za,South Africa - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,za,account,addons
+l10n_zm_account,Zambia - Accounting,Lokalisierung,Accounting/Localizations/Account Charts,,False,True,LGPL-3,zm,account,addons
+link_tracker,Link Tracker,Erweiterung,Marketing,,False,False,LGPL-3,,"utm,mail",addons
+loyalty,Coupons & Loyalty,Erweiterung,Sales,"Use discounts, gift cards, eWallets and loyalty programs in your sales channels",False,False,LGPL-3,,"product,portal,account",addons
+lunch,Lunch,App,Human Resources/Lunch,Handle lunch orders of your employees,True,False,LGPL-3,,mail,addons
+mail,Discuss,App,Productivity/Discuss,"Chat, mail gateway and private channels",True,False,LGPL-3,,"base,base_setup,bus,web_tour,html_editor",addons
+mail_bot,OdooBot,Technisch/Brücke,Productivity/Discuss,Add OdooBot in discussions,False,True,LGPL-3,,mail,addons
+mail_bot_hr,OdooBot - HR,Technisch/Brücke,Productivity/Discuss,Bridge module between hr and mailbot.,False,True,LGPL-3,,"mail_bot,hr",addons
+mail_group,Mail Group,Erweiterung,Uncategorized,Manage your mailing lists,False,False,LGPL-3,,"mail,portal",addons
+mail_plugin,Mail Plugin,Technisch/Brücke,Sales/CRM,Allows integration with mail plugins.,False,True,LGPL-3,,"digest,web,contacts",addons
+mail_tracking,Discuss Tracking,Erweiterung,Productivity/Discuss,Technical tracking of discussion and message-related data,False,False,LGPL-3,,mail,addons
+mail_tracking_mass_mailing,Mass Mailing Tracking,Technisch/Brücke,Productivity/Discuss,Track source of messages by mass mailing,False,True,LGPL-3,,"mail_tracking,mass_mailing",addons
+mail_tracking_sms,SMS Message Tracking,Technisch/Brücke,Productivity/Discuss,Track source of messages by sms,False,True,LGPL-3,,"mail_tracking,sms",addons
+maintenance,Maintenance,App,Supply Chain/Maintenance,Track equipment and manage maintenance requests,True,False,LGPL-3,,mail,addons
+marketing_card,Marketing Card,App,Marketing/Marketing Card,Generate dynamic shareable cards,True,False,LGPL-3,,"link_tracker,mass_mailing,website,base_report_wkhtmltox",addons
+marketing_card_event,Marketing Card For Events,Technisch/Brücke,Marketing/Marketing Card,Generate dynamic shareable cards for entities linked to events.,False,True,LGPL-3,,"marketing_card,event",addons
+mass_mailing,Email Marketing,App,Marketing/Email Marketing,"Design, send and track emails",True,False,LGPL-3,,"contacts,mail,html_builder,utm,link_tracker,social_media,web_tour,digest",addons
+mass_mailing_crm,Mass mailing on lead / opportunities,Technisch/Brücke,Marketing/Email Marketing,Add lead / opportunities UTM info on mass mailing,False,True,LGPL-3,,"crm,mass_mailing",addons
+mass_mailing_crm_sms,Mass mailing sms on lead / opportunities,Technisch/Brücke,Marketing/Email Marketing,Add lead / opportunities info on mass mailing sms,False,True,LGPL-3,,"mass_mailing_crm,mass_mailing_sms",addons
+mass_mailing_event,Mass mailing on attendees,Technisch/Brücke,Marketing/Email Marketing,,False,True,LGPL-3,,"event,mass_mailing",addons
+mass_mailing_event_sms,Event Attendees SMS Marketing,Technisch/Brücke,Marketing/Email Marketing,,False,True,LGPL-3,,"event,mass_mailing,mass_mailing_event,mass_mailing_sms,sms",addons
+mass_mailing_event_track,Mass mailing on track speakers,Technisch/Brücke,Marketing/Email Marketing,,False,True,LGPL-3,,"website_event_track,mass_mailing",addons
+mass_mailing_event_track_sms,Track Speakers SMS Marketing,Technisch/Brücke,Marketing/Email Marketing,,False,True,LGPL-3,,"mass_mailing,mass_mailing_sms,sms,website_event_track",addons
+mass_mailing_sale,Mass mailing on sale orders,Technisch/Brücke,Marketing/Email Marketing,Add sale order UTM info on mass mailing,False,True,LGPL-3,,"sale,mass_mailing",addons
+mass_mailing_sale_sms,Mass mailing sms on sale orders,Technisch/Brücke,Marketing/Email Marketing,Add sale order info on mass mailing sms,False,True,LGPL-3,,"mass_mailing_sale,mass_mailing_sms",addons
+mass_mailing_slides,Mass mailing on course members,Technisch/Brücke,Marketing/Email Marketing,,False,True,LGPL-3,,"website_slides,mass_mailing",addons
+mass_mailing_sms,SMS Marketing,App,Marketing/Email Marketing,"Design, send and track SMS",True,False,LGPL-3,,"portal,mass_mailing,sms",addons
+mass_mailing_themes,Mass Mailing Themes,Technisch/Brücke,Marketing/Email Marketing,Design gorgeous mails,False,True,LGPL-3,,mass_mailing,addons
+microsoft_account,Microsoft Users,Technisch/Brücke,Hidden/Tools,,False,False,LGPL-3,,base_setup,addons
+microsoft_calendar,Outlook Calendar,Erweiterung,Productivity,,False,False,LGPL-3,,"microsoft_account,calendar",addons
+microsoft_outlook,Microsoft Outlook,Technisch/Brücke,Hidden,,False,True,LGPL-3,,mail,addons
+mrp,Manufacturing,App,Supply Chain/Manufacturing,Manufacturing Orders & BOMs,True,False,LGPL-3,,"product,stock,resource",addons
+mrp_account,Accounting - MRP,Technisch/Brücke,Supply Chain/Manufacturing,Analytic accounting in Manufacturing,False,True,LGPL-3,,"mrp,stock_account",addons
+mrp_delivery,Delivery and MRP Management,Technisch/Brücke,Shipping Connectors,Carrier with kits,False,True,LGPL-3,,"mrp,stock_delivery",addons
+mrp_landed_costs,Landed Costs On MO,Technisch/Brücke,Supply Chain/Manufacturing,Landed Costs on Manufacturing Order,False,True,LGPL-3,,"stock_landed_costs,mrp",addons
+mrp_product_expiry,Manufacturing Expiry,Technisch/Brücke,Supply Chain/Manufacturing,Manufacturing Expiry,False,True,LGPL-3,,"mrp,product_expiry",addons
+mrp_repair,Mrp Repairs,Technisch/Brücke,Supply Chain/Inventory,,False,True,LGPL-3,,"repair,mrp",addons
+mrp_subcontracting,MRP Subcontracting,Erweiterung,Supply Chain/Manufacturing,Subcontract Productions,False,False,LGPL-3,,mrp,addons
+mrp_subcontracting_account,Subcontracting Management with Stock Valuation,Technisch/Brücke,Supply Chain/Manufacturing,,False,True,LGPL-3,,"mrp_subcontracting,mrp_account",addons
+mrp_subcontracting_dropshipping,Dropship and Subcontracting Management,Technisch/Brücke,Supply Chain/Purchase,,False,True,LGPL-3,,"mrp_subcontracting,stock_dropshipping",addons
+mrp_subcontracting_landed_costs,Landed Costs With Subcontracting order,Technisch/Brücke,Supply Chain/Manufacturing,Advanced views to manage landed cost for subcontracting orders,False,True,LGPL-3,,"mrp_landed_costs,mrp_subcontracting",addons
+mrp_subcontracting_purchase,Purchase and Subcontracting Management,Technisch/Brücke,Supply Chain/Purchase,,False,True,LGPL-3,,"mrp_subcontracting_account,purchase_mrp",addons
+mysubscription,My Subscription,Technisch/Brücke,Sales,Backend Subscription App,False,True,LGPL-3,,"base,web",addons
+onboarding,Onboarding Toolbox,Technisch/Brücke,Hidden,,False,False,LGPL-3,,web,addons
+partner_autocomplete,Partner Autocomplete,Technisch/Brücke,Hidden/Tools,Auto-complete partner companies' data,False,True,LGPL-3,,iap_mail,addons
+partnership,Partnership / Membership,Erweiterung,Sales/CRM,,False,False,LGPL-3,,"crm,sale",addons
+payment,Payment Engine,Technisch/Brücke,Hidden,The payment engine used by payment provider modules.,False,False,LGPL-3,,"onboarding,portal",addons
+payment_adyen,Payment Provider: Adyen,Erweiterung,Accounting/Payment Providers,A Dutch payment provider covering Europe and the US.,False,False,LGPL-3,,payment,addons
+payment_aps,Payment Provider: Amazon Payment Services,Erweiterung,Accounting/Payment Providers,An Amazon payment provider covering the MENA region.,False,False,LGPL-3,,payment,addons
+payment_asiapay,Payment Provider: AsiaPay,Erweiterung,Accounting/Payment Providers,An payment provider based in Hong Kong covering most Asian countries.,False,False,LGPL-3,,payment,addons
+payment_authorize,Payment Provider: Authorize.Net,Erweiterung,Accounting/Payment Providers,"An payment provider covering the US, Australia, and Canada.",False,False,LGPL-3,,payment,addons
+payment_buckaroo,Payment Provider: Buckaroo,Erweiterung,Accounting/Payment Providers,A Dutch payment provider covering several countries in Europe.,False,False,LGPL-3,,payment,addons
+payment_custom,Payment Provider: Custom Payment Modes,Erweiterung,Accounting/Payment Providers,A payment provider for custom flows like wire transfers.,False,False,LGPL-3,,payment,addons
+payment_demo,Payment Provider: Demo,Erweiterung,Accounting/Accounting,A payment provider for running fake payment flows for demo purposes.,False,False,LGPL-3,,payment,addons
+payment_dpo,Payment Provider: DPO,Erweiterung,Accounting/Payment Providers,A Kenyan payment provider covering several African countries.,False,False,LGPL-3,,payment,addons
+payment_ecpay,Payment Provider: ECPay,Erweiterung,Accounting/Payment Providers,A payment provider covering the Taiwanese market.,False,False,LGPL-3,,payment,addons
+payment_flutterwave,Payment Provider: Flutterwave,Erweiterung,Accounting/Payment Providers,A Nigerian payment provider covering several African countries.,False,False,LGPL-3,,payment,addons
+payment_iyzico,Payment Provider: Iyzico,Erweiterung,Accounting/Payment Providers,A payment provider covering Turkey.,False,False,LGPL-3,,payment,addons
+payment_mercado_pago,Payment Provider: Mercado Pago,Erweiterung,Accounting/Payment Providers,A payment provider covering several countries in Latin America.,False,False,LGPL-3,,payment,addons
+payment_mollie,Payment Provider: Mollie,Erweiterung,Accounting/Payment Providers,A Dutch payment provider covering several European countries.,False,False,LGPL-3,,payment,addons
+payment_nuvei,Payment Provider: Nuvei,Erweiterung,Accounting/Payment Providers,A payment provider covering Latin America.,False,False,LGPL-3,,payment,addons
+payment_paymob,Payment Provider: Paymob,Erweiterung,Accounting/Payment Providers,An Egyptian payment provider for the Middle East.,False,False,LGPL-3,,payment,addons
+payment_paypal,Payment Provider: Paypal,Erweiterung,Accounting/Payment Providers,An American payment provider for online payments all over the world.,False,False,LGPL-3,,payment,addons
+payment_payu,Payment Provider: PayU,Erweiterung,Accounting/Payment Providers,A payment provider covering India.,False,False,LGPL-3,,payment,addons
+payment_razorpay,Payment Provider: Razorpay,Erweiterung,Accounting/Payment Providers,A payment provider covering India.,False,False,LGPL-3,,payment,addons
+payment_redsys,Payment Provider: Redsys,Erweiterung,Accounting/Payment Providers,A payment provider covering the Spanish market.,False,False,LGPL-3,,payment,addons
+payment_stripe,Payment Provider: Stripe,Erweiterung,Accounting/Payment Providers,An Irish-American payment provider covering the US and many others.,False,False,LGPL-3,,payment,addons
+payment_toss_payments,Payment Provider: Toss Payments,Erweiterung,Accounting/Payment Providers,A payment provider covering the South Korea market,False,False,LGPL-3,,payment,addons
+payment_worldline,Payment Provider: Worldline,Erweiterung,Accounting/Payment Providers,A French payment provider covering several European countries.,False,False,LGPL-3,,payment,addons
+payment_xendit,Payment Provider: Xendit,Erweiterung,Accounting/Payment Providers,A payment provider for Indonesian and the Philippines.,False,False,LGPL-3,,payment,addons
+phone_validation,Phone Numbers Validation,Technisch/Brücke,Hidden,Validate and format phone numbers,False,True,LGPL-3,,"base,mail",addons
+point_of_sale,Point of Sale,App,Sales/Point of Sale,Handle checkouts and payments for shops and restaurants.,True,False,LGPL-3,,"resource,product,account,barcodes_gs1_nomenclature,html_editor,digest,phone_validation,google_address_autocomplete,base_report_wkhtmltox,iot_webserial",addons
+populate,Populate,Technisch/Brücke,Hidden/Tools,Generate synthetic data for an Odoo database,False,False,LGPL-3,,base,addons
+portal,Customer Portal,Technisch/Brücke,Hidden,Customer Portal,False,False,LGPL-3,,"auth_signup,base_address_extended,html_editor,http_routing,mail,web",addons
+portal_discuss,Portal Discuss,Technisch/Brücke,Services,,False,True,LGPL-3,,"mail,portal",addons
+portal_rating,Portal Rating,Technisch/Brücke,Services,,False,True,LGPL-3,,"portal,rating",addons
+pos_account_tax_python,Allow custom taxes in POS,Technisch/Brücke,Accounting/Accounting,,False,True,LGPL-3,,"account_tax_python,point_of_sale",addons
+pos_adyen,POS Adyen,Erweiterung,Sales/Point of Sale,Integrate your POS with an Adyen payment terminal,False,False,LGPL-3,,"point_of_sale,payment_adyen",addons
+pos_bancontact_pay,POS Bancontact Pay & Wero,Erweiterung,Sales/Point of Sale,Accept Bancontact Pay and Wero QR code payments in POS (Payconiq).,False,False,LGPL-3,,point_of_sale,addons
+pos_cashdro,POS Cashdro Cash Machines,Erweiterung,Sales/Point of Sale,Integrate your POS with a Cashdro automatic cash payment device,False,False,LGPL-3,,point_of_sale,addons
+pos_cashmatic,POS Cashmatic Cash Machines,Erweiterung,Sales/Point of Sale,Integrate your POS with a cash matic automatic cash payment device,False,False,LGPL-3,,point_of_sale,addons
+pos_discount,Point of Sale Discounts,Erweiterung,Sales/Point of Sale,Simple Discounts in the Point of Sale,False,False,LGPL-3,,point_of_sale,addons
+pos_dpopay,PoS DPO Pay,Erweiterung,Sales/Point of Sale,Integrate your POS with DPO payment terminal.,False,False,LGPL-3,,point_of_sale,addons
+pos_edi_ubl,Point of Sale UBL,Erweiterung,Sales/Point of Sale,UBL in the Point of Sale,False,False,LGPL-3,,"point_of_sale,account_edi_ubl_cii",addons
+pos_event,POS - Event,Technisch/Brücke,Technical,Link module between Point of Sale and Event,False,True,LGPL-3,,"point_of_sale,event_product",addons
+pos_event_sale,PoS - Event Sale,Technisch/Brücke,Technical,Link module between pos_sale and pos_event,False,True,LGPL-3,,"pos_event,pos_sale,event_sale",addons
+pos_glory_cash,POS Glory Cash Machines,Erweiterung,Sales/Point of Sale,Integrate your POS with a Glory automatic cash payment device,False,False,LGPL-3,,point_of_sale,addons
+pos_hr,POS - HR,Technisch/Brücke,Sales/Point of Sale,Link module between Point of Sale and HR,False,True,LGPL-3,,"point_of_sale,hr",addons
+pos_hr_restaurant,POS HR Restaurant,Technisch/Brücke,Sales/Point of Sale,Link module between pos_hr and pos_restaurant,False,True,LGPL-3,,"pos_hr,pos_restaurant",addons
+pos_imin,POS iMin,Erweiterung,Sales/Point of Sale,iMin ePOS Printers in PoS,False,False,LGPL-3,,point_of_sale,addons
+pos_loyalty,Point of Sale - Coupons & Loyalty,Technisch/Brücke,Sales/Point Of Sale,"Use Coupons, Gift Cards and Loyalty programs in Point of Sale",False,True,LGPL-3,,"loyalty,point_of_sale",addons
+pos_mercado_pago,POS Mercado Pago,Erweiterung,Sales/Point of Sale,Integrate your POS with the Mercado Pago Smart Point terminal,False,False,LGPL-3,,point_of_sale,addons
+pos_mollie,POS Mollie,Erweiterung,Sales/Point of Sale,Integrate your POS with a Mollie payment terminal,False,False,LGPL-3,,"point_of_sale,payment_mollie",addons
+pos_mrp,pos_mrp,Technisch/Brücke,Sales/Point of Sale,Link module between Point of Sale and Mrp,False,True,LGPL-3,,"pos_stock,mrp",addons
+pos_online_payment,Point of Sale online payment,Technisch/Brücke,Uncategorized,,False,True,LGPL-3,,"point_of_sale,account_payment",addons
+pos_online_payment_self_order,POS Self-Order / Online Payment,Technisch/Brücke,Sales/Point of Sale,Support online payment in self-order,False,True,LGPL-3,,"pos_online_payment,pos_self_order",addons
+pos_partner_autocomplete,POS Partner Autocomplete,Technisch/Brücke,Sales/Point of Sale,Link module between Partner Autocomplete and Point of Sale,False,True,LGPL-3,,"partner_autocomplete,point_of_sale",addons
+pos_pine_labs,POS Pine Labs,Erweiterung,Sales/Point of Sale,Integrate your POS with Pine Labs payment terminals,False,False,LGPL-3,,point_of_sale,addons
+pos_qfpay,POS QFPay,Erweiterung,Sales/Point of Sale,Integrate your POS with the QFPay terminal in Hong Kong,False,False,LGPL-3,,point_of_sale,addons
+pos_razorpay,POS Razorpay,Erweiterung,Sales/Point of Sale,Integrate your POS with a Razorpay payment terminal,False,False,LGPL-3,,point_of_sale,addons
+pos_repair,POS - Repair,Technisch/Brücke,Technical,Link module between Point of Sale and Repair,False,True,LGPL-3,,"pos_stock,repair",addons
+pos_restaurant,Restaurant,App,Sales/Point of Sale,Restaurant extensions for the Point of Sale,True,False,LGPL-3,,point_of_sale,addons
+pos_restaurant_loyalty,POS - Restaurant Loyalty,Technisch/Brücke,Sales/Point of Sale,Link module between pos_restaurant and pos_loyalty,False,True,LGPL-3,,"pos_restaurant,pos_loyalty",addons
+pos_safaricom,POS Safaricom,Erweiterung,Sales/Point of Sale,Integrate your POS with the Safaricom Payment Provider,False,False,LGPL-3,,point_of_sale,addons
+pos_sale,POS - Sales,Technisch/Brücke,Sales/Point of Sale,Link module between Point of Sale and Sales,False,True,LGPL-3,,"point_of_sale,sale_management",addons
+pos_sale_delivery,POS - Sales Delivery,Technisch/Brücke,Hidden,,False,True,LGPL-3,,"pos_sale,stock_delivery",addons
+pos_sale_loyalty,POS - Sales Loyalty,Technisch/Brücke,Sales/Point of Sale,Link module between pos_sale and pos_loyalty,False,True,LGPL-3,,"pos_sale,pos_loyalty",addons
+pos_sale_margin,POS - Sale Margin,Technisch/Brücke,Sales/Point of Sale,Link module between Point of Sale and Sales Margin,False,True,LGPL-3,,"pos_sale,sale_margin",addons
+pos_sale_stock,POS - Sales Stock,Technisch/Brücke,Sales/Point of Sale,Link module between PoS Stock and Sales,False,True,LGPL-3,,"pos_stock,pos_sale",addons
+pos_self_order,POS Self Order,Technisch/Brücke,Sales/Point Of Sale,Addon for the POS App that allows customers to view the menu on their smartphone.,False,True,LGPL-3,,"pos_restaurant,http_routing,link_tracker,google_address_autocomplete,base_geolocalize",addons
+pos_self_order_bancontact_pay,POS Self Order Bancontact Pay & Wero,Technisch/Brücke,Sales/Point of Sale,Accept Bancontact Pay and Wero QR code payments in a kiosk (Payconiq).,False,True,LGPL-3,,"pos_self_order,pos_bancontact_pay",addons
+pos_self_order_event,POS Self Order - Event,Technisch/Brücke,Sales/Point Of Sale,Link module between PoS Self Order and PoS Event,False,True,LGPL-3,,"pos_self_order,pos_event",addons
+pos_self_order_pine_labs,POS Self Order Pine Labs,Technisch/Brücke,Sales/Point Of Sale,An addon for the Self Order App (KIOSK) that allows customers to pay using the Pine Labs POS Terminal.,False,True,LGPL-3,,"pos_pine_labs,pos_self_order",addons
+pos_self_order_qfpay,POS Self Order QFPay,Technisch/Brücke,Sales/Point Of Sale,Addon for the Self Order App that allows customers to pay by QFPay.,False,True,LGPL-3,,"pos_qfpay,pos_self_order",addons
+pos_self_order_razorpay,POS Self Order Razorpay,Technisch/Brücke,Sales/Point Of Sale,Addon for the Self Order App that allows customers to pay by Razorpay POS Terminal.,False,True,LGPL-3,,"pos_razorpay,pos_self_order",addons
+pos_self_order_sale,POS Self Order Sale,Technisch/Brücke,Sales/Point Of Sale,,False,True,LGPL-3,,"pos_sale,pos_self_order",addons
+pos_self_order_sms,POS Self Order SMS,Technisch/Brücke,Sales/Point Of Sale,,False,True,LGPL-3,,"pos_self_order,pos_sms",addons
+pos_sms,POS - SMS,Erweiterung,Send sms to customer for order confirmation,,False,False,LGPL-3,,"point_of_sale,sms",addons
+pos_stock,PoS - Stock,Technisch/Brücke,Sales/Point of Sale,Stock integration for PoS,False,True,LGPL-3,,"point_of_sale,stock_account",addons
+pos_stripe,POS Stripe,Erweiterung,Sales/Point of Sale,Integrate your POS with a Stripe payment terminal,False,False,LGPL-3,,"point_of_sale,payment_stripe",addons
+pos_sumup,POS SumUp,Erweiterung,Sales/Point of Sale,Integrate your POS with a SumUp payment terminal,False,False,LGPL-3,,point_of_sale,addons
+pos_viva_com,PoS Viva.com,Erweiterung,Sales/Point of Sale,Integrate your PoS with a Viva.com payment terminal,False,False,LGPL-3,,point_of_sale,addons
+printer,Printer,Erweiterung,Uncategorized,"Base module to manage external printers (e.g. ePOS, ZPL)",False,False,LGPL-3,,base,addons
+privacy_lookup,Privacy,Technisch/Brücke,Hidden,,False,True,LGPL-3,,mail,addons
+product,Products & Pricelists,Erweiterung,Sales/Sales,,False,False,LGPL-3,,"base,mail,uom",addons
+product_email_template,Product Email Template,Erweiterung,Accounting/Accounting,,False,False,LGPL-3,,account,addons
+product_expiry,Products Expiration Date,Erweiterung,Supply Chain/Inventory,,False,False,LGPL-3,,stock,addons
+product_margin,Margins by Products,Erweiterung,Sales/Sales,,False,False,LGPL-3,,account,addons
+product_matrix,Product Matrix,Erweiterung,Sales/Sales,Technical module: Matrix Implementation,False,False,LGPL-3,,account,addons
+project,Project,App,Services/Project,Manage tasks and collaborate on projects,True,False,LGPL-3,,"analytic,base_setup,mail,portal_rating,resource,web,web_tour,digest",addons
+project_account,Project - Account,Technisch/Brücke,Accounting/Accounting,project profitability items computation,False,True,LGPL-3,,"account,project",addons
+project_hr_expense,Project Expenses,Technisch/Brücke,Services/expenses,Project expenses,False,True,LGPL-3,,"project_account,hr_expense",addons
+project_hr_skills,Project - Skills,Technisch/Brücke,Services/Project,Project skills,False,True,LGPL-3,,"project,hr_skills",addons
+project_mail_plugin,Project Mail Plugin,Technisch/Brücke,Services/Project,Integrate your inbox with projects,False,True,LGPL-3,,"project,mail_plugin",addons
+project_mrp,MRP Project,Technisch/Brücke,Services/Project,Monitor MRP using project,False,True,LGPL-3,,"mrp,project",addons
+project_mrp_account,MRP Account Project,Technisch/Brücke,Services/Project,Monitor MRP account using project,False,True,LGPL-3,,"mrp_account,project_mrp,project_stock_account",addons
+project_mrp_sale,MRP Project Sale,Technisch/Brücke,Services/Project,Technical Bridge,False,True,LGPL-3,,"project_mrp,sale_mrp,sale_project",addons
+project_mrp_stock_landed_costs,Project MRP Landed Costs,Technisch/Brücke,Supply Chain/Manufacturing,Technical Bridge,False,True,LGPL-3,,"project_mrp_account,mrp_landed_costs",addons
+project_purchase,Project Purchase,Technisch/Brücke,Services/Project,Monitor purchase in project,False,True,LGPL-3,,"purchase,project_account",addons
+project_purchase_stock,Project - Purchase - Stock,Technisch/Brücke,Services/Project,,False,True,LGPL-3,,"project_purchase,project_stock",addons
+project_sale_expense,Project - Sale - Expense,Technisch/Brücke,Services/Project,,False,True,LGPL-3,,"sale_project,sale_expense,project_hr_expense",addons
+project_sms,Project - SMS,Technisch/Brücke,Services/Project,Send text messages when project/task stage move,False,True,LGPL-3,,"project,sms",addons
+project_stock,Project Stock,Technisch/Brücke,Services/Project,Link Stock pickings to Project,False,True,LGPL-3,,"stock,project",addons
+project_stock_account,Project Stock Account,Technisch/Brücke,Services/Project,Handle analytics in Stock pickings with Project,False,True,LGPL-3,,"stock_account,project_stock",addons
+project_stock_landed_costs,Project Stock Landed Costs,Technisch/Brücke,Supply Chain/Inventory,Technical Bridge,False,True,LGPL-3,,"project_stock_account,stock_landed_costs",addons
+project_timesheet_holidays,Timesheet when on Time Off,Technisch/Brücke,Human Resources,Schedule timesheet when on time off,False,True,LGPL-3,,"hr_timesheet,hr_holidays",addons
+project_todo,To-Do,App,Productivity/To-Do,Organize your work with memos and to-do lists,True,True,LGPL-3,,project,addons
+purchase,Purchase,App,Supply Chain/Purchase,"Purchase orders, tenders and agreements",True,False,LGPL-3,,account,addons
+purchase_alternative,Purchase Alternative,Erweiterung,Supply Chain/Purchase,,False,False,LGPL-3,,purchase,addons
+purchase_alternative_sale,Purchase Alternative Sale,Technisch/Brücke,Supply Chain/Purchase,,False,True,LGPL-3,,"purchase_alternative,sale_purchase",addons
+purchase_alternative_stock,Purchase Alternative Stock,Technisch/Brücke,Supply Chain/Purchase,,False,True,LGPL-3,,"purchase_alternative,purchase_stock",addons
+purchase_edi_ubl_bis3,Import/Export electronic orders with UBL,Technisch/Brücke,Supply Chain/Purchase,,False,True,LGPL-3,,"purchase,account_edi_ubl_cii",addons
+purchase_mrp,Purchase and MRP Management,Technisch/Brücke,Supply Chain/Purchase,,False,True,LGPL-3,,"mrp,purchase_stock",addons
+purchase_product_matrix,Purchase Matrix,Erweiterung,Supply Chain/Purchase,Add variants to your purchase orders through an Order Grid Entry.,False,False,LGPL-3,,"purchase,product_matrix",addons
+purchase_repair,Purchase Repair,Technisch/Brücke,Supply Chain/Purchase,Keep track of linked purchase and repair orders,False,True,LGPL-3,,"repair,purchase_stock",addons
+purchase_requisition,Purchase Agreements,Erweiterung,Supply Chain/Purchase,,False,False,LGPL-3,,purchase,addons
+purchase_requisition_stock,Purchase Requisition Stock,Technisch/Brücke,Supply Chain/Purchase,,False,True,LGPL-3,,"purchase_requisition,purchase_stock",addons
+purchase_stock,Purchase Stock,Technisch/Brücke,Supply Chain/Purchase,"Purchase Orders, Receipts, Vendor Bills for Stock",False,True,LGPL-3,,"stock_account,purchase",addons
+rating,Customer Rating,Erweiterung,Productivity,,False,False,LGPL-3,,mail,addons
+repair,Repairs,App,Supply Chain/Inventory,Repair damaged products,True,False,LGPL-3,,"sale_stock,sale_management",addons
+resource,Resource,Technisch/Brücke,Hidden,,False,False,LGPL-3,,"base,web",addons
+resource_mail,Resource Mail,Technisch/Brücke,Hidden,,False,True,LGPL-3,,"resource,mail",addons
+rpc,RPC endpoints,Technisch/Brücke,Extra Tools,,False,True,LGPL-3,,base,addons
+sale,Sales,Erweiterung,Sales/Sales,Sales internal machinery,False,False,LGPL-3,,"sales_team,account_payment,utm",addons
+sale_crm,Opportunity to Quotation,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,"sale,crm",addons
+sale_edi_ubl,Import electronic orders with UBL,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,"sale,account_edi_ubl_cii",addons
+sale_expense,Sales Expense,Technisch/Brücke,Sales/Sales,"Quotation, Sales Orders, Delivery & Invoicing Control",False,True,LGPL-3,,"sale_management,hr_expense",addons
+sale_expense_margin,Sales Expense Margin,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,"sale_expense,sale_margin",addons
+sale_gelato,Gelato,Erweiterung,Sales/Sales,Place orders through Gelato's print-on-demand service,False,False,LGPL-3,,"sale,delivery",addons
+sale_gelato_stock,Gelato/Stock bridge,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,"sale_gelato,sale_stock",addons
+sale_loyalty,Sale Loyalty,Technisch/Brücke,Sales/Sales,Use discounts and loyalty programs in sales orders,False,True,LGPL-3,,"sale,loyalty",addons
+sale_loyalty_delivery,Sale Loyalty - Delivery,Technisch/Brücke,Sales/Sales,Adds free shipping mechanism in sales orders,False,True,LGPL-3,,"sale_loyalty,delivery",addons
+sale_management,Sales,App,Sales/Sales,From quotations to invoices,True,False,LGPL-3,,"sale,digest",addons
+sale_margin,Margins in Sales Orders,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,sale_management,addons
+sale_mrp,Sales and MRP Management,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,"mrp,sale_stock",addons
+sale_mrp_margin,Sale Mrp Margin,Erweiterung,Sales/Sales,,False,False,LGPL-3,,"sale_mrp,sale_stock_margin",addons
+sale_pdf_quote_builder,Sales PDF Quotation Builder,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,sale_management,addons
+sale_product_matrix,Sale Matrix,Erweiterung,Sales/Sales,Add variants to Sales Order through a grid entry.,False,False,LGPL-3,,"sale,product_matrix",addons
+sale_project,Sales - Project,Technisch/Brücke,Sales/Sales,Task Generation from Sales Orders,False,True,LGPL-3,,"sale_management,sale_service,project_account",addons
+sale_project_margin,Sales Margins in Projects,Technisch/Brücke,Sales/Sales,Bridge module between Sales Margin and Project,False,True,LGPL-3,,"sale_margin,sale_project",addons
+sale_project_stock,Sale Project - Sale Stock,Technisch/Brücke,Sales,Adds a full traceability of inventory operations on the profitability report.,False,True,LGPL-3,,"sale_project,sale_stock,project_stock_account",addons
+sale_project_stock_account,Sale Project Stock Account,Technisch/Brücke,Hidden,Technical Bridge,False,True,LGPL-3,,"sale_project,project_stock_account",addons
+sale_purchase,Sale Purchase,Technisch/Brücke,Sales/Sales,Sale based on service outsourcing.,False,True,LGPL-3,,"sale,purchase",addons
+sale_purchase_project,Sale Purchase Project,Technisch/Brücke,Sales,Technical Bridge,False,True,LGPL-3,,"sale_purchase,project_purchase,sale_project",addons
+sale_purchase_stock,MTO Sale <-> Purchase,Technisch/Brücke,Sales/Sales,SO/PO relation in case of MTO,False,True,LGPL-3,,"sale_stock,purchase_stock,sale_purchase",addons
+sale_service,Sales - Service,Erweiterung,Sales/Sales,Interaction between Sales and services apps (project and planning),False,False,LGPL-3,,sale_management,addons
+sale_sms,Sale - SMS,Technisch/Brücke,Sales/Sales,Ease SMS integration with sales capabilities,False,True,LGPL-3,,"sale,sms",addons
+sale_stock,Sales and Warehouse Management,Technisch/Brücke,Sales/Sales,"Quotation, Sales Orders, Delivery & Invoicing Control",False,True,LGPL-3,,"sale,stock_account",addons
+sale_stock_margin,Sale Stock Margin,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,"sale_stock,sale_margin",addons
+sale_stock_product_expiry,Sale Stock Product Expiry,Technisch/Brücke,Sales/Sales,,False,True,LGPL-3,,"sale_stock,product_expiry",addons
+sale_timesheet,Sales Timesheet,Technisch/Brücke,Sales/Sales,Sell based on timesheets,False,True,LGPL-3,,"sale_project,hr_timesheet",addons
+sale_timesheet_margin,Service Margins in Sales Orders,Technisch/Brücke,Sales/Sales,Bridge module between Sales Margin and Sales Timesheet,False,True,LGPL-3,,"sale_margin,sale_timesheet",addons
+sales_team,Sales Teams,Erweiterung,Sales/Sales,Sales Teams,False,False,LGPL-3,,"base,mail",addons
+sms,SMS gateway,Technisch/Brücke,Sales/Sales,SMS Text Messaging,False,True,LGPL-3,,"base,iap_mail,mail,phone_validation",addons
+sms_twilio,Twilio SMS,Technisch/Brücke,Hidden/Tools,Send SMS messages using Twilio,False,False,LGPL-3,,sms,addons
+snailmail,Snail Mail,Technisch/Brücke,Hidden/Tools,,False,False,LGPL-3,,"iap_mail,mail",addons
+snailmail_account,Snail Mail - Account,Technisch/Brücke,Hidden/Tools,,False,True,LGPL-3,,"account,snailmail",addons
+social_media,Social Media,Erweiterung,Marketing/Social Marketing,Social media connectors for company settings.,False,False,LGPL-3,,base,addons
+spreadsheet,Spreadsheet,Erweiterung,Productivity/Dashboard,Spreadsheet,False,False,LGPL-3,,"bus,web,portal",addons
+spreadsheet_account,Spreadsheet Accounting Formulas,Technisch/Brücke,Accounting,Spreadsheet Accounting formulas,False,True,LGPL-3,,"spreadsheet,account",addons
+spreadsheet_dashboard,Spreadsheet dashboard,Erweiterung,Productivity/Dashboard,Spreadsheet,False,False,LGPL-3,,spreadsheet,addons
+spreadsheet_dashboard_account,Spreadsheet dashboard for accounting,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,spreadsheet_account",addons
+spreadsheet_dashboard_event_sale,Spreadsheet dashboard for events,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,event_sale",addons
+spreadsheet_dashboard_hr_expense,Spreadsheet dashboard for expenses,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,sale_expense",addons
+spreadsheet_dashboard_hr_timesheet,Spreadsheet dashboard for time sheets,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,hr_timesheet",addons
+spreadsheet_dashboard_im_livechat,Spreadsheet dashboard for live chat,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,im_livechat",addons
+spreadsheet_dashboard_pos_hr,Spreadsheet dashboard for point of sale,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,pos_hr",addons
+spreadsheet_dashboard_pos_restaurant,Spreadsheet dashboard for restaurants,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,pos_hr,pos_restaurant",addons
+spreadsheet_dashboard_sale,Spreadsheet dashboard for sales,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,sale",addons
+spreadsheet_dashboard_sale_timesheet,Spreadsheet dashboard for time sheets,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,sale_timesheet",addons
+spreadsheet_dashboard_stock_account,Spreadsheet dashboard for stock,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,stock_account",addons
+spreadsheet_dashboard_website_sale,Spreadsheet dashboard for eCommerce,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,website_sale",addons
+spreadsheet_dashboard_website_sale_slides,Spreadsheet dashboard for eLearning,Technisch/Brücke,Productivity/Dashboard,Spreadsheet,False,True,LGPL-3,,"spreadsheet_dashboard,website_sale_slides",addons
+stock,Inventory,App,Supply Chain/Inventory,Manage your stock and logistics activities,True,False,LGPL-3,,"product,barcodes_gs1_nomenclature,digest",addons
+stock_account,WMS Accounting,Technisch/Brücke,Supply Chain/Inventory,"Inventory, Logistic, Valuation, Accounting",False,True,LGPL-3,,"stock,account",addons
+stock_delivery,Delivery - Stock,Technisch/Brücke,Shipping Connectors,,False,True,LGPL-3,,"printer,sale_stock,delivery",addons
+stock_dropshipping,Drop Shipping,Erweiterung,Supply Chain/Inventory,Drop Shipping,False,False,LGPL-3,,sale_purchase_stock,addons
+stock_fleet,Stock Transport,Erweiterung,Uncategorized,Stock Transport Management,False,False,LGPL-3,,"stock,fleet",addons
+stock_landed_costs,WMS Landed Costs,Erweiterung,Supply Chain/Inventory,Landed Costs,False,False,LGPL-3,,"stock_account,purchase_stock",addons
+stock_maintenance,Stock - Maintenance,Technisch/Brücke,Supply Chain/Inventory,See lots used in maintenance,False,True,LGPL-3,,"stock,maintenance",addons
+stock_sms,Stock - SMS,Technisch/Brücke,Supply Chain/Inventory,Send text messages when final stock move,False,True,LGPL-3,,"stock,sms",addons
+survey,Surveys,App,Marketing/Surveys,Send your surveys or share them live.,True,False,LGPL-3,,"auth_signup,http_routing,mail,web_tour,gamification,digest",addons
+survey_crm,Survey CRM,Technisch/Brücke,Marketing/Surveys,Generate leads from surveys,False,True,LGPL-3,,"survey,crm",addons
+test_base_automation,Test - Base Automation,Test,Hidden,Base Automation Tests: Ensure Flow Robustness,False,False,LGPL-3,,base_automation,addons
+test_crm_full,Test Full Crm Flow,Test,Hidden/Tests,,False,False,LGPL-3,,"crm,crm_iap_enrich,crm_iap_mine,crm_sms,event_crm,sale_crm,website_crm,website_crm_iap_reveal,website_crm_partner_assign,website_crm_livechat",addons
+test_discuss_full,Test Discuss (full),Test,Productivity/Discuss,Test of Discuss with all possible overrides installed.,False,False,LGPL-3,,"calendar,crm,crm_livechat,hr_attendance,hr_fleet,hr_holidays,im_livechat,mail,mail_bot,microsoft_calendar,project_todo,website_livechat,website_sale,website_slides",addons
+test_event_full,Test Full Event Flow,Test,Hidden/Tests,,False,False,LGPL-3,,"event,event_booth,event_crm,event_crm_sale,event_sale,event_sms,payment_demo,website_event_booth_sale_exhibitor,website_event_exhibitor,website_event_sale,website_event_track,website_event_track_live,website_event_track_quiz",addons
+test_html_field_history,Test - html_field_history,Test,Hidden,,False,False,LGPL-3,,html_editor,addons
+test_import_export,Test - Import & Export,Test,Hidden,Base Import & Export Tests: Ensure Flow Robustness,False,False,LGPL-3,,"web,base_import,website,test_base",addons
+test_mail,Mail Tests,Test,Hidden,Mail Tests: performances and tests specific to mail,False,False,LGPL-3,,"mail,test_base,phone_validation,mail_tracking",addons
+test_mail_full,Mail Tests (Full),Test,Hidden,Mail Tests: performances and tests specific to mail with all sub-modules,False,False,LGPL-3,,"mail,mail_bot,mail_tracking_mass_mailing,mass_mailing,mass_mailing_sms,phone_validation,portal,rating,sms,test_mail,test_mail_sms,test_mass_mailing",addons
+test_mail_sms,SMS Tests,Test,Hidden,SMS Tests: performances and tests specific to SMS,False,False,LGPL-3,,"mail,mail_tracking_sms,sms,sms_twilio,test_base",addons
+test_mass_mailing,Mass Mail Tests,Test,Marketing/Email Marketing,Mass Mail Tests: feature and performance tests for mass mailing,False,False,LGPL-3,,"mail_tracking_mass_mailing,mass_mailing,mass_mailing_sms,sms_twilio,test_mail,test_mail_sms",addons
+test_populate,Odoo Populate Tests,Test,Hidden/Tests,Test module for Odoo's Populate,False,False,LGPL-3,,populate,addons
+test_resource,Test - Resource,Test,Hidden,,False,False,LGPL-3,,resource,addons
+test_sale_product_configurators,Sale Product Configurators Tests,Test,Hidden,Test Suite for Sale Product Configurator,False,False,LGPL-3,,"event_sale,sale_management,sale_product_matrix",addons
+test_sale_purchase_edi_ubl,Test - Sale & Purchase Order EDI,Test,Hidden,Sale & Purchase Order EDI Tests: Ensure Flow Robustness,False,False,LGPL-3,,"purchase_edi_ubl_bis3,sale_edi_ubl",addons
+test_spreadsheet,Spreadsheet Test,Test,Hidden,"Spreadsheet Test, mainly to test the mixin behavior",False,False,LGPL-3,,spreadsheet,addons
+test_translation_mode,Translation Mode,Test,Hidden,In-context and interactive translation mode to streamline the module translation process using Weblate,False,False,LGPL-3,,web,addons
+test_utm,UTM Tests,Test,Hidden,UTM Tests: tests specific to the UTM module,False,False,LGPL-3,,utm,addons
+test_website,Website Test,Test,Hidden,"Website Test, mainly for module install/uninstall tests",False,False,LGPL-3,,"web_unsplash,website,theme_default",addons
+test_website_modules,Website Modules Test,Test,Hidden,,False,False,LGPL-3,,"theme_default,website,website_blog,website_event_sale,website_slides,website_livechat,website_crm_iap_reveal,website_sale",addons
+test_website_slides_full,Test Full eLearning Flow,Test,Hidden/Tests,,False,False,LGPL-3,,"website_sale_slides,website_slides_forum,website_slides_survey",addons
+theme_default,Default Theme,Erweiterung,Theme,,False,False,LGPL-3,,website,addons
+uom,Units of measure,Erweiterung,Sales/Sales,,False,False,LGPL-3,,base,addons
+utm,UTM Trackers,Erweiterung,Marketing,,False,False,LGPL-3,,"base,web",addons
+web,Web,Technisch/Brücke,Hidden,,False,True,LGPL-3,,base,addons
+web_hierarchy,Web Hierarchy,Technisch/Brücke,Hidden,,False,False,LGPL-3,,web,addons
+web_tour,Tours,Technisch/Brücke,Hidden,,False,True,LGPL-3,,web,addons
+web_unsplash,Unsplash Image Library,Technisch/Brücke,Hidden,Find free high-resolution images from Unsplash,False,True,LGPL-3,,"base_setup,html_editor",addons
+website,Website,App,Website/Website,Enterprise website builder,True,False,LGPL-3,,"digest,web,html_editor,http_routing,portal,social_media,auth_signup,mail,google_recaptcha,utm,html_builder",addons
+website_address_autocomplete,Website Address Autocomplete,Technisch/Brücke,Website/Website,Assist your users with automatic completion & suggestions when filling their address,False,True,LGPL-3,,"website,google_address_autocomplete",addons
+website_blog,Blog,Erweiterung,Website/Website,"Publish blog posts, announces, news",False,False,LGPL-3,,"website_mail,website_partner,html_builder",addons
+website_cf_turnstile,Cloudflare Turnstile,Erweiterung,Website/Website,,False,False,LGPL-3,,website,addons
+website_crm,Contact Form,Technisch/Brücke,Website/Website,Generate leads from a contact form,False,True,LGPL-3,,"website,crm",addons
+website_crm_iap_reveal,Lead Generation From Website Visits,Erweiterung,Sales/CRM,Generate Leads/Opportunities from your website's traffic,False,False,LGPL-3,,"iap_crm,iap_mail,crm_iap_mine,website_crm",addons
+website_crm_livechat,Lead Livechat Sessions,Technisch/Brücke,Website/Website,View livechat sessions for leads,False,True,LGPL-3,,"website_crm,website_livechat,crm_livechat",addons
+website_crm_partner_assign,Resellers,Erweiterung,Website/Website,Publish your resellers/partners and forward leads to them,False,False,LGPL-3,,"base_geolocalize,crm,account,website_partnership,website_partner,website_google_map,portal",addons
+website_crm_sms,Send SMS to Visitor with leads,Technisch/Brücke,Website/Website,Allows to send sms to website visitor that have lead,False,True,LGPL-3,,"website_sms,crm",addons
+website_customer,Customer References,Erweiterung,Website/Website,Publish your customer references,False,False,LGPL-3,,"website_crm_partner_assign,website_partner,website_google_map",addons
+website_event,Events,App,Marketing/Events,"Publish events, sell tickets",True,False,LGPL-3,,"event,website,website_partner,website_mail,html_builder",addons
+website_event_booth,Online Event Booths,Technisch/Brücke,Marketing/Events,"Events, display your booths on your website",False,True,LGPL-3,,"website_event,event_booth",addons
+website_event_booth_exhibitor,Booths/Exhibitors Bridge,Technisch/Brücke,Marketing/Events,"Event Booths, automatically create a sponsor.",False,True,LGPL-3,,"website_event_exhibitor,website_event_booth",addons
+website_event_booth_sale,Online Event Booth Sale,Technisch/Brücke,Marketing/Events,"Events, sell your booths online",False,True,LGPL-3,,"event_booth_sale,website_event_booth,website_sale",addons
+website_event_booth_sale_exhibitor,Booths Sale/Exhibitors Bridge,Technisch/Brücke,Marketing/Events,Bridge module between website_event_booth_exhibitor and website_event_booth_sale.,False,True,LGPL-3,,"website_event_exhibitor,website_event_booth_sale",addons
+website_event_crm,Website Events CRM,Technisch/Brücke,Website/Website,,False,True,LGPL-3,,"event_crm,website_event",addons
+website_event_exhibitor,Event Exhibitors,Erweiterung,Marketing/Events,Event: manage sponsors and exhibitors,False,False,LGPL-3,,website_event,addons
+website_event_sale,Online Event Ticketing,Technisch/Brücke,Website/Website,Sell event tickets online,False,True,LGPL-3,,"website_event,event_sale,website_sale",addons
+website_event_track,Advanced Events,Erweiterung,Marketing,"Sponsors, Tracks, Agenda, Event News",False,False,LGPL-3,,website_event,addons
+website_event_track_live,Live Event Tracks,Erweiterung,Marketing/Events,"Support live tracks: streaming, participation, youtube",False,False,LGPL-3,,website_event_track,addons
+website_event_track_live_quiz,Quiz on Live Event Tracks,Technisch/Brücke,Marketing/Events,"Bridge module to support quiz features during ""live"" tracks.",False,True,LGPL-3,,"website_event_track_live,website_event_track_quiz",addons
+website_event_track_quiz,Quizzes on Tracks,Erweiterung,Marketing/Events,Quizzes on tracks,False,False,LGPL-3,,"website_profile,website_event_track",addons
+website_forum,Forum,Erweiterung,Website/Website,Manage a forum with FAQ and Q&A,False,False,LGPL-3,,"auth_signup,website_mail,website_profile",addons
+website_google_map,Google Maps,Erweiterung,Website/Website,Show your company address on Google Maps,False,False,LGPL-3,,"base_geolocalize,website_partner",addons
+website_hr_recruitment,Online Jobs,App,Website/Website,Manage your online hiring process,True,True,LGPL-3,,"hr_recruitment,website_mail",addons
+website_hr_recruitment_livechat,Website IM Livechat HR Recruitment,Erweiterung,Website/Live Chat,Chatbot for the HR Recruitment,False,False,LGPL-3,,"website_hr_recruitment,im_livechat",addons
+website_links,Link Tracker,Technisch/Brücke,Website/Website,Generate trackable & short URLs,False,True,LGPL-3,,"website,link_tracker",addons
+website_livechat,Website Live Chat,Technisch/Brücke,Website/Live Chat,Chat with your website visitors,False,True,LGPL-3,,"website,im_livechat",addons
+website_mail,Website Mail,Technisch/Brücke,Website/Website,Website Module for Mail,False,True,LGPL-3,,"website,mail",addons
+website_mail_group,Website Mail Group,Technisch/Brücke,Uncategorized,Add a website snippet for the mail groups.,False,True,LGPL-3,,"mail_group,website",addons
+website_mass_mailing,Newsletter Subscribe Button,Technisch/Brücke,Website/Website,Attract visitors to subscribe to mailing lists,False,True,LGPL-3,,"website,mass_mailing,google_recaptcha",addons
+website_mass_mailing_event,Mass mailing on website events,Technisch/Brücke,Marketing/Email Marketing/Website,Add pre-filled snippets in mass_mailing with an event snapshot,False,True,LGPL-3,,"mass_mailing,website_event",addons
+website_mass_mailing_sms,Newsletter Subscribe SMS Template,Technisch/Brücke,Website/Website,Attract visitors to subscribe to mailing lists,False,True,LGPL-3,,"website_mass_mailing,mass_mailing_sms",addons
+website_partner,Website Partner,Erweiterung,Website/Website,Partner module for website,False,False,LGPL-3,,website,addons
+website_partnership,Website Partnership,Erweiterung,Website/Website,Publish your partners on your website,False,False,LGPL-3,,"partnership,website_partner",addons
+website_payment,Website Payment,Technisch/Brücke,Website/Website,Payment integration with website,False,True,LGPL-3,,"website,account_payment,portal",addons
+website_profile,Website profile,Erweiterung,Website/Website,Access the website profile of the users,False,False,LGPL-3,,"html_editor,website_partner,gamification",addons
+website_project,Online Task Submission,Technisch/Brücke,Website/Website,Add a task suggestion form to your website,False,True,LGPL-3,,"website,project",addons
+website_sale,eCommerce,App,Website/Website,Sell your products online,True,False,LGPL-3,,"website,sale,website_payment,website_mail,portal_rating,digest,delivery,html_builder",addons
+website_sale_collect,Click & Collect,Erweiterung,Website/Website,,False,False,LGPL-3,,"base_geolocalize,payment_custom,website_sale_stock",addons
+website_sale_gelato,eCommerce/Gelato bridge,Technisch/Brücke,Website/Website,,False,True,LGPL-3,,"sale_gelato,website_sale",addons
+website_sale_loyalty,"Coupons, Promotions, Gift Card and Loyalty for eCommerce",Technisch/Brücke,Website/Website,"Use coupon, promotion, gift cards and loyalty programs in your eCommerce store",False,True,LGPL-3,,"website_sale,website_links,sale_loyalty",addons
+website_sale_mass_mailing,Checkout Newsletter,Technisch/Brücke,Website/Website,Let new customers sign up for a newsletter during checkout,False,True,LGPL-3,,"website_sale,website_mass_mailing,mass_mailing_sale",addons
+website_sale_mrp,Kit Availability,Technisch/Brücke,Website/Website,Manage Kit product inventory & availability,False,True,LGPL-3,,"website_sale_stock,sale_mrp",addons
+website_sale_project,Website Sale - Project,Technisch/Brücke,Website/Website,Bridge module between website_sale and project,False,True,LGPL-3,,"website_sale,project",addons
+website_sale_slides,Sell Courses,Erweiterung,Website/eLearning,Sell your courses online,False,False,LGPL-3,,"website_slides,website_sale",addons
+website_sale_stock,Product Availability,Technisch/Brücke,Website/Website,Manage product inventory & availability,False,True,LGPL-3,,"website_sale,sale_stock,stock_delivery",addons
+website_slides,eLearning,App,Website/eLearning,Manage and publish an eLearning platform,True,False,LGPL-3,,"portal_rating,website,website_mail,website_profile,digest",addons
+website_slides_forum,Forum on Courses,Technisch/Brücke,Website/eLearning,Allows to link forum on a course,False,True,LGPL-3,,"website_slides,website_forum",addons
+website_slides_survey,Course Certifications,Technisch/Brücke,Website/eLearning,Add certification capabilities to your courses,False,True,LGPL-3,,"website_slides,survey",addons
+website_sms,Send SMS to Visitor,Technisch/Brücke,Website/Website,Allows to send sms to website visitor,False,True,LGPL-3,,"website,sms",addons
+website_timesheet,Hide Portal Timesheet Information,Technisch/Brücke,Website/Website,Allow hiding timesheet information in the portal,False,True,LGPL-3,,"website,hr_timesheet",addons
